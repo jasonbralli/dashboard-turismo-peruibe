@@ -1,0 +1,33 @@
+# Dados sensíveis e restritos
+data/CADASTUR*.csv
+data/ABIH*.pdf
+data/caged*.pdf
+
+# Documentos internos (não publicar)
+brief.md
+sources.md
+IDEA.md
+tasks/
+
+# Dados intermediários (séries antigas)
+data/processed/google_trends_peruibe.csv
+data/processed/google_trends_peruibe_5y_2026.csv
+data/processed/google_trends_comparativo.csv
+data/processed/google_trends_comparativo_10y.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

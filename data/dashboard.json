@@ -1,0 +1,868 @@
+{
+  "meta": {
+    "titulo": "Dashboard de Inteligência Turística — Peruíbe",
+    "subtitle": "Dados consolidados de procura, sazonalidade, impacto econômico e comparativo regional",
+    "ultima_atualizacao": "2026-07-24 (12 fontes coletadas)",
+    "periodo_coberto": "2016-2026",
+    "fontes_count": 12
+  },
+  "perfil_municipio": {
+    "area_km2": 326,
+    "populacao_2022": 68352,
+    "populacao_2010": 72793,
+    "pib_2021_bi": 1.97,
+    "pib_per_capita_2021": 28766,
+    "estancia_balnearia": true,
+    "estancia_posicao": "1 de 15 no SP",
+    "mata_atlantica_pct": 68,
+    "titulos": [
+      "UNESCO",
+      "Ramsar"
+    ],
+    "microrregiao": "Itanhaém",
+    "mesorregiao": "Litoral Sul Paulista",
+    "ibge_codigo": 3537602,
+    "fonte": "IBGE Censo 2022 + PIB 2021 + PDTur 2022"
+  },
+  "bloco1_procura": {
+    "titulo": "Evolução da Procura Turística",
+    "descricao": "Volume de hospedagens, anúncios Airbnb, interesse de busca Google e prestadores cadastrados",
+    "hospedagens_total": 434,
+    "hospedagens_fonte": "Booking.com",
+    "hospedagens_data_coleta": "2026-07-24",
+    "airbnb_anuncios": "1000+",
+    "airbnb_descricao": "Mais de mil anúncios (inclui quartos — não confundir com estabelecimentos)",
+    "airbnb_nota": "Airbnb exibe 'mais de mil acomodações' mas inclui quartos compartilhados. Número de estabelecimentos é menor. Coleta detalhada pendente.",
+    "airbnb_fonte": "Airbnb.com.br (24/07/2026)",
+    "google_trends_nota": "Coletado via pytrends — 127 datapoints mensais (jan/2016 a jul/2026) — termo 'Peruíbe' — 10 anos",
+    "google_trends_serie": [
+      {
+        "mes": "2016-01",
+        "valor": 23
+      },
+      {
+        "mes": "2016-02",
+        "valor": 17
+      },
+      {
+        "mes": "2016-03",
+        "valor": 13
+      },
+      {
+        "mes": "2016-04",
+        "valor": 14
+      },
+      {
+        "mes": "2016-05",
+        "valor": 8
+      },
+      {
+        "mes": "2016-06",
+        "valor": 9
+      },
+      {
+        "mes": "2016-07",
+        "valor": 9
+      },
+      {
+        "mes": "2016-08",
+        "valor": 8
+      },
+      {
+        "mes": "2016-09",
+        "valor": 10
+      },
+      {
+        "mes": "2016-10",
+        "valor": 13
+      },
+      {
+        "mes": "2016-11",
+        "valor": 12
+      },
+      {
+        "mes": "2016-12",
+        "valor": 16
+      },
+      {
+        "mes": "2017-01",
+        "valor": 22
+      },
+      {
+        "mes": "2017-02",
+        "valor": 15
+      },
+      {
+        "mes": "2017-03",
+        "valor": 12
+      },
+      {
+        "mes": "2017-04",
+        "valor": 12
+      },
+      {
+        "mes": "2017-05",
+        "valor": 9
+      },
+      {
+        "mes": "2017-06",
+        "valor": 12
+      },
+      {
+        "mes": "2017-07",
+        "valor": 13
+      },
+      {
+        "mes": "2017-08",
+        "valor": 13
+      },
+      {
+        "mes": "2017-09",
+        "valor": 17
+      },
+      {
+        "mes": "2017-10",
+        "valor": 20
+      },
+      {
+        "mes": "2017-11",
+        "valor": 22
+      },
+      {
+        "mes": "2017-12",
+        "valor": 34
+      },
+      {
+        "mes": "2018-01",
+        "valor": 40
+      },
+      {
+        "mes": "2018-02",
+        "valor": 25
+      },
+      {
+        "mes": "2018-03",
+        "valor": 21
+      },
+      {
+        "mes": "2018-04",
+        "valor": 20
+      },
+      {
+        "mes": "2018-05",
+        "valor": 20
+      },
+      {
+        "mes": "2018-06",
+        "valor": 19
+      },
+      {
+        "mes": "2018-07",
+        "valor": 26
+      },
+      {
+        "mes": "2018-08",
+        "valor": 23
+      },
+      {
+        "mes": "2018-09",
+        "valor": 33
+      },
+      {
+        "mes": "2018-10",
+        "valor": 37
+      },
+      {
+        "mes": "2018-11",
+        "valor": 49
+      },
+      {
+        "mes": "2018-12",
+        "valor": 67
+      },
+      {
+        "mes": "2019-01",
+        "valor": 68
+      },
+      {
+        "mes": "2019-02",
+        "valor": 48
+      },
+      {
+        "mes": "2019-03",
+        "valor": 42
+      },
+      {
+        "mes": "2019-04",
+        "valor": 35
+      },
+      {
+        "mes": "2019-05",
+        "valor": 33
+      },
+      {
+        "mes": "2019-06",
+        "valor": 29
+      },
+      {
+        "mes": "2019-07",
+        "valor": 40
+      },
+      {
+        "mes": "2019-08",
+        "valor": 38
+      },
+      {
+        "mes": "2019-09",
+        "valor": 46
+      },
+      {
+        "mes": "2019-10",
+        "valor": 48
+      },
+      {
+        "mes": "2019-11",
+        "valor": 52
+      },
+      {
+        "mes": "2019-12",
+        "valor": 73
+      },
+      {
+        "mes": "2020-01",
+        "valor": 77
+      },
+      {
+        "mes": "2020-02",
+        "valor": 61
+      },
+      {
+        "mes": "2020-03",
+        "valor": 37
+      },
+      {
+        "mes": "2020-04",
+        "valor": 30
+      },
+      {
+        "mes": "2020-05",
+        "valor": 33
+      },
+      {
+        "mes": "2020-06",
+        "valor": 37
+      },
+      {
+        "mes": "2020-07",
+        "valor": 46
+      },
+      {
+        "mes": "2020-08",
+        "valor": 49
+      },
+      {
+        "mes": "2020-09",
+        "valor": 62
+      },
+      {
+        "mes": "2020-10",
+        "valor": 74
+      },
+      {
+        "mes": "2020-11",
+        "valor": 70
+      },
+      {
+        "mes": "2020-12",
+        "valor": 70
+      },
+      {
+        "mes": "2021-01",
+        "valor": 85
+      },
+      {
+        "mes": "2021-02",
+        "valor": 61
+      },
+      {
+        "mes": "2021-03",
+        "valor": 44
+      },
+      {
+        "mes": "2021-04",
+        "valor": 41
+      },
+      {
+        "mes": "2021-05",
+        "valor": 44
+      },
+      {
+        "mes": "2021-06",
+        "valor": 44
+      },
+      {
+        "mes": "2021-07",
+        "valor": 52
+      },
+      {
+        "mes": "2021-08",
+        "valor": 53
+      },
+      {
+        "mes": "2021-09",
+        "valor": 60
+      },
+      {
+        "mes": "2021-10",
+        "valor": 62
+      },
+      {
+        "mes": "2021-11",
+        "valor": 60
+      },
+      {
+        "mes": "2021-12",
+        "valor": 76
+      },
+      {
+        "mes": "2022-01",
+        "valor": 91
+      },
+      {
+        "mes": "2022-02",
+        "valor": 69
+      },
+      {
+        "mes": "2022-03",
+        "valor": 66
+      },
+      {
+        "mes": "2022-04",
+        "valor": 61
+      },
+      {
+        "mes": "2022-05",
+        "valor": 47
+      },
+      {
+        "mes": "2022-06",
+        "valor": 51
+      },
+      {
+        "mes": "2022-07",
+        "valor": 49
+      },
+      {
+        "mes": "2022-08",
+        "valor": 50
+      },
+      {
+        "mes": "2022-09",
+        "valor": 50
+      },
+      {
+        "mes": "2022-10",
+        "valor": 61
+      },
+      {
+        "mes": "2022-11",
+        "valor": 64
+      },
+      {
+        "mes": "2022-12",
+        "valor": 78
+      },
+      {
+        "mes": "2023-01",
+        "valor": 91
+      },
+      {
+        "mes": "2023-02",
+        "valor": 67
+      },
+      {
+        "mes": "2023-03",
+        "valor": 48
+      },
+      {
+        "mes": "2023-04",
+        "valor": 53
+      },
+      {
+        "mes": "2023-05",
+        "valor": 38
+      },
+      {
+        "mes": "2023-06",
+        "valor": 42
+      },
+      {
+        "mes": "2023-07",
+        "valor": 50
+      },
+      {
+        "mes": "2023-08",
+        "valor": 49
+      },
+      {
+        "mes": "2023-09",
+        "valor": 56
+      },
+      {
+        "mes": "2023-10",
+        "valor": 57
+      },
+      {
+        "mes": "2023-11",
+        "valor": 60
+      },
+      {
+        "mes": "2023-12",
+        "valor": 82
+      },
+      {
+        "mes": "2024-01",
+        "valor": 93
+      },
+      {
+        "mes": "2024-02",
+        "valor": 56
+      },
+      {
+        "mes": "2024-03",
+        "valor": 49
+      },
+      {
+        "mes": "2024-04",
+        "valor": 44
+      },
+      {
+        "mes": "2024-05",
+        "valor": 45
+      },
+      {
+        "mes": "2024-06",
+        "valor": 49
+      },
+      {
+        "mes": "2024-07",
+        "valor": 48
+      },
+      {
+        "mes": "2024-08",
+        "valor": 46
+      },
+      {
+        "mes": "2024-09",
+        "valor": 54
+      },
+      {
+        "mes": "2024-10",
+        "valor": 58
+      },
+      {
+        "mes": "2024-11",
+        "valor": 57
+      },
+      {
+        "mes": "2024-12",
+        "valor": 79
+      },
+      {
+        "mes": "2025-01",
+        "valor": 94
+      },
+      {
+        "mes": "2025-02",
+        "valor": 54
+      },
+      {
+        "mes": "2025-03",
+        "valor": 51
+      },
+      {
+        "mes": "2025-04",
+        "valor": 49
+      },
+      {
+        "mes": "2025-05",
+        "valor": 39
+      },
+      {
+        "mes": "2025-06",
+        "valor": 39
+      },
+      {
+        "mes": "2025-07",
+        "valor": 46
+      },
+      {
+        "mes": "2025-08",
+        "valor": 47
+      },
+      {
+        "mes": "2025-09",
+        "valor": 51
+      },
+      {
+        "mes": "2025-10",
+        "valor": 56
+      },
+      {
+        "mes": "2025-11",
+        "valor": 60
+      },
+      {
+        "mes": "2025-12",
+        "valor": 87
+      },
+      {
+        "mes": "2026-01",
+        "valor": 100
+      },
+      {
+        "mes": "2026-02",
+        "valor": 69
+      },
+      {
+        "mes": "2026-03",
+        "valor": 51
+      },
+      {
+        "mes": "2026-04",
+        "valor": 57
+      },
+      {
+        "mes": "2026-05",
+        "valor": 48
+      },
+      {
+        "mes": "2026-06",
+        "valor": 46
+      },
+      {
+        "mes": "2026-07",
+        "valor": 54
+      }
+    ],
+    "google_trends_media": 45.8,
+    "google_trends_pico": {
+      "mes": "2026-01",
+      "valor": 100
+    },
+    "google_trends_ultimo": {
+      "mes": "2026-07",
+      "valor": 54
+    },
+    "cadastur_total_cadastamentos": 138,
+    "cadastur_prestadores_unicos": 132,
+    "cadastur_atividades": [
+      {
+        "atividade": "Guia de Turismo",
+        "quantidade": 68
+      },
+      {
+        "atividade": "Meio de Hospedagem",
+        "quantidade": 27
+      },
+      {
+        "atividade": "Agência de Turismo",
+        "quantidade": 19
+      },
+      {
+        "atividade": "Transportadora Turística",
+        "quantidade": 9
+      },
+      {
+        "atividade": "Prestador Especializado em Segmentos Turísticos",
+        "quantidade": 5
+      },
+      {
+        "atividade": "Organizadora de Eventos",
+        "quantidade": 3
+      },
+      {
+        "atividade": "Restaurante, Cafeteria, Bar e Similares",
+        "quantidade": 3
+      },
+      {
+        "atividade": "Empreendimento de Apoio ao Turismo Náutico ou à Pesca Desportiva",
+        "quantidade": 2
+      },
+      {
+        "atividade": "Guia de Turismo Guia-Motorista",
+        "quantidade": 1
+      },
+      {
+        "atividade": "Prestador de Infraestrutura de Apoio para Eventos",
+        "quantidade": 1
+      }
+    ],
+    "cadastur_fonte": "CADASTUR (Ministério do Turismo) — 07/2026"
+  },
+  "bloco2_sazonalidade": {
+    "titulo": "Padrões Sazonais e Previsão — Litoral Paulista",
+    "descricao": "Indicadores mensais de desempenho hoteleiro do Litoral Paulista (inclui Peruíbe). Estes dados são regionais, não municipais.",
+    "escopo_nota": "⚠️ Dados do Litoral Paulista (região), não de Peruíbe isoladamente. ABIH-SP não divulga dados por município.",
+    "mrt_referencia": "Litoral Paulista (9 municípios, inclui Peruíbe)",
+    "fonte": "ABIH-SP — 71ª edição (Maio/26)",
+    "dados_mensais": [
+      {
+        "mes": "Mai/2026",
+        "to": 39.42,
+        "to_var_vs_abr": 1.48,
+        "to_var_vs_ano": -4.24,
+        "dm": 669.68,
+        "dm_var_vs_abr": -2.95,
+        "dm_var_vs_ano": 11.96,
+        "revpar": 263.99,
+        "revpar_var_vs_abr": -1.51,
+        "revpar_var_vs_ano": 7.21
+      }
+    ],
+    "acumulado_2026": {
+      "to": 52.21,
+      "dm": 664.19,
+      "revpar": 346.95
+    },
+    "infraestrutura": {
+      "propriedades": 562,
+      "uhs": 16060,
+      "hoteis": 191,
+      "pousadas": 367,
+      "resorts": 4,
+      "municipios": 9,
+      "habitantes": 1848654
+    },
+    "amostragem": "107 propriedades (1,42% do total), 459 municípios (70,16%), 266.939 UHs (89,49%)",
+    "respondentes": "2 municípios responderam — 201 propriedades / 6.285 UHs",
+    "projecao_verao_2526": {
+      "sp_total_turistas": "16.7M",
+      "litoral_sp_turistas": "7.5M",
+      "sp_total_receita": "R$ 41 bilhões",
+      "fonte": "CIET/SETUR-SP",
+      "data_ref": "Dez/2025"
+    },
+    "eventos_pico": [
+      {
+        "evento": "Verão (Dez-Mar)",
+        "intensidade": "Alta",
+        "nota": "Pico de procura — 7,5M turistas no litoral SP"
+      },
+      {
+        "evento": "Carnaval",
+        "intensidade": "Alta",
+        "nota": "Pico sazonal tradicional"
+      },
+      {
+        "evento": "Maio/26",
+        "intensidade": "Baixa",
+        "nota": "Outono/inverno arrefece demanda dos litorais (ABIH-SP Mai/26)"
+      }
+    ]
+  },
+  "bloco3_impacto_economico": {
+    "titulo": "Retorno Econômico do Turismo",
+    "descricao": "Empregos formais, empresas de turismo e prestadores cadastrados",
+    "empregos_turismo_sp": {
+      "total": 981327,
+      "variacao_acumulada": 5.1,
+      "fonte": "Novo CAGED/CIET",
+      "data_ref": "Nov/2025"
+    },
+    "empresas_turismo_sp": {
+      "total": 346804,
+      "variacao_12m": 2.9,
+      "fonte": "JUCESP/CIET",
+      "data_ref": "Nov/2025"
+    },
+    "caged_peruibe": {
+      "estoque": 9615,
+      "admitidos": 1992,
+      "desligados": 2245,
+      "saldo": -253,
+      "fonte": "Novo CAGED — Painel PowerBI",
+      "data_ref": "2026 (acumulado jan-mai)"
+    },
+    "empresas_ativas_total": 11339,
+    "empresas_detalhe": {
+      "matriz_ativa": 11002,
+      "filial_ativa": 337,
+      "matriz_baixada": 14786,
+      "filial_baixada": 473,
+      "total_matriz": 31065,
+      "total_filial": 889,
+      "fonte": "Redesim/Receita Federal — https://estatistica.redesim.gov.br/situacao-cnpj",
+      "data_ref": "30/06/2026"
+    },
+    "empresas_fonte": "Redesim/Receita Federal",
+    "empresas_data_coleta": "30/06/2026",
+    "cadastur_atividades": [
+      {
+        "atividade": "Guia de Turismo",
+        "quantidade": 68
+      },
+      {
+        "atividade": "Meio de Hospedagem",
+        "quantidade": 27
+      },
+      {
+        "atividade": "Agência de Turismo",
+        "quantidade": 19
+      },
+      {
+        "atividade": "Transportadora Turística",
+        "quantidade": 9
+      },
+      {
+        "atividade": "Prestador Especializado em Segmentos Turísticos",
+        "quantidade": 5
+      },
+      {
+        "atividade": "Organizadora de Eventos",
+        "quantidade": 3
+      },
+      {
+        "atividade": "Restaurante, Cafeteria, Bar e Similares",
+        "quantidade": 3
+      },
+      {
+        "atividade": "Empreendimento de Apoio ao Turismo Náutico ou à Pesca Desportiva",
+        "quantidade": 2
+      },
+      {
+        "atividade": "Guia de Turismo Guia-Motorista",
+        "quantidade": 1
+      },
+      {
+        "atividade": "Prestador de Infraestrutura de Apoio para Eventos",
+        "quantidade": 1
+      }
+    ],
+    "cadastur_total": 138,
+    "cadastur_unicos": 132,
+    "iss_turistico": null,
+    "iss_turistico_nota": "Próxima rodada — Portal Transparência SP (restrição eleições 2026)"
+  },
+  "bloco4_comparativo_regional": {
+    "titulo": "Peruíbe vs Baixada Santista — Indicadores Socioeconômicos",
+    "descricao": "Comparação entre municípios com dados automatizados via IBGE + Redesim + Google Trends",
+    "escopo_nota": "Todas as fontes são automatizáveis: IBGE API (PIB, População), Redesim (CNPJ), pytrends (Google Trends). Sem coleta manual necessária.",
+    "cidades": [
+      {
+        "cidade": "Peruíbe",
+        "populacao_2022": 68352,
+        "pib_2021_bi": 1.97,
+        "pib_per_capita": 28766,
+        "google_trends_10y": 45.8,
+        "google_trends_ultimo": 54,
+        "estabelecimentos_ativos": 11339
+      },
+      {
+        "cidade": "Itanhaém",
+        "populacao_2022": 112476,
+        "pib_2021_bi": 2.37,
+        "pib_per_capita": 21065,
+        "google_trends_10y": 50.1,
+        "google_trends_ultimo": 51,
+        "estabelecimentos_ativos": 15526
+      },
+      {
+        "cidade": "Mongaguá",
+        "populacao_2022": 61951,
+        "pib_2021_bi": 1.25,
+        "pib_per_capita": 20252,
+        "google_trends_10y": 45.5,
+        "google_trends_ultimo": 47,
+        "estabelecimentos_ativos": 9857
+      },
+      {
+        "cidade": "Santos",
+        "populacao_2022": 418608,
+        "pib_2021_bi": 24.09,
+        "pib_per_capita": 57548,
+        "google_trends_10y": 46.7,
+        "google_trends_ultimo": 39,
+        "estabelecimentos_ativos": 87246
+      },
+      {
+        "cidade": "São Vicente",
+        "populacao_2022": 329911,
+        "pib_2021_bi": 6.12,
+        "pib_per_capita": 18554,
+        "google_trends_10y": 72.3,
+        "google_trends_ultimo": 78,
+        "estabelecimentos_ativos": 49515
+      }
+    ],
+    "ranking_nota": "PIB de 2021 (último disponível no IBGE). População do Censo 2022."
+  },
+  "fontes_utilizadas": [
+    {
+      "id": "F8",
+      "nome": "Booking.com",
+      "data_coleta": "2026-07-24",
+      "dados": "434 hospedagens (Peruíbe)"
+    },
+    {
+      "id": "F2",
+      "nome": "ABIH-SP 71ª edição",
+      "data_coleta": "Maio/26",
+      "dados": "TO 39,42% / DM R$ 669,68 / RevPar R$ 263,99 — Litoral Paulista"
+    },
+    {
+      "id": "F9",
+      "nome": "Google Trends (pytrends)",
+      "data_coleta": "2026-07-24",
+      "dados": "127 datapoints 'Peruíbe' jan/2016 a jul/2026 (10 anos)"
+    },
+    {
+      "id": "F3",
+      "nome": "CADASTUR",
+      "data_coleta": "07/2026",
+      "dados": "138 cadastamentos / 132 prestadores únicos — 10 categorias"
+    },
+    {
+      "id": "F13",
+      "nome": "Novo CAGED (PowerBI)",
+      "data_coleta": "2026-07-24",
+      "dados": "Estoque 9.615 / Adm 1.992 / Desl 2.245 / Saldo -253"
+    },
+    {
+      "id": "F1",
+      "nome": "CIET/SETUR-SP",
+      "data_coleta": "2026-07-24",
+      "dados": "Projeção verão 25/26, emprego/empresas SP"
+    },
+    {
+      "id": "F4",
+      "nome": "PDTur 2022",
+      "data_coleta": "2026-07-24",
+      "dados": "Perfil do município, inventário turístico"
+    },
+    {
+      "id": "Airbnb",
+      "nome": "Airbnb.com.br",
+      "data_coleta": "2026-07-24",
+      "dados": "Mais de mil anúncios em Peruíbe"
+    },
+    {
+      "id": "F11",
+      "nome": "Redesim/Receita Federal",
+      "data_coleta": "2026-07-24",
+      "dados": "Estabelecimentos ativos de 5 cidades: Peruíbe 11.339, Itanhaém 15.526, Mongaguá 9.857, Santos 87.246, São Vicente 49.515 (ref 30/06/2026)"
+    },
+    {
+      "id": "IBGE",
+      "nome": "IBGE — Censo 2022 + PIB 2021",
+      "data_coleta": "2026-07-24",
+      "dados": "Pop. 68.352 (Censo 2022) + PIB R$ 1,97 bi + comparativo 5 cidades"
+    },
+    {
+      "id": "F7",
+      "nome": "Portal Transparência SP",
+      "data_coleta": "Pendente",
+      "dados": "ISS turístico — próxima rodada (restrição eleições)"
+    }
+  ]
+}
