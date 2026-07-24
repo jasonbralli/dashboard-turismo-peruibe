@@ -48,9 +48,10 @@
     .metric-card .value.red { color:var(--red); }
     .metric-card .sub { font-size:0.78rem; color:var(--text-dim); margin-top:4px; }
     .metric-card .nd { color:var(--text-dim); font-size:1rem; font-style:italic; font-weight:400; }
-    table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+    .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; border-radius:8px; }
+    table { width:100%; border-collapse:collapse; font-size:0.88rem; min-width:480px; }
     thead th { text-align:left; padding:10px 14px; white-space:nowrap; border-bottom:2px solid var(--border); color:var(--text-dim); font-weight:600; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; }
-    tbody td { padding:10px 14px; border-bottom:1px solid var(--border); }
+    tbody td { padding:10px 14px; border-bottom:1px solid var(--border); white-space:nowrap; }
     tbody tr:hover { background:var(--bg-hover); }
     .nd-cell { color:var(--text-dim); font-style:italic; font-size:0.82rem; }
     .events-strip { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
@@ -90,6 +91,10 @@
       .block-header .desc { margin-left:0; }
       .bar-row { grid-template-columns:140px 1fr 50px; }
       .profile-strip { grid-template-columns:repeat(2,1fr); }
+      .table-wrap { max-width:calc(100vw - 48px); }
+      table { font-size:0.78rem; }
+      thead th, tbody td { padding:8px 10px; }
+      .bar-row { grid-template-columns:110px 1fr 45px; font-size:0.78rem; }
     }
   </style>
 </head>
@@ -135,10 +140,12 @@
     <div class="scope-notice">⚠️ Estes dados são do <strong>Litoral Paulista</strong> (região com 9 municípios), não de Peruíbe isoladamente. A ABIH-SP não divulga dados por município individualmente.</div>
     <div class="block-body">
       <div class="metrics-grid" id="b2-metrics"></div>
+      <div class="table-wrap">
       <table id="b2-table">
         <thead id="b2-thead"></thead>
         <tbody id="b2-tbody"></tbody>
       </table>
+      </div>
       <div class="events-strip" id="b2-events"></div>
     </div>
   </div>
@@ -164,10 +171,12 @@
       <span class="desc">Fontes: IBGE (PIB, População) + Google Trends (10 anos) — automatizado</span>
     </div>
     <div class="block-body">
+      <div class="table-wrap">
       <table id="b4-table">
         <thead id="b4-thead"></thead>
         <tbody id="b4-tbody"></tbody>
       </table>
+      </div>
     </div>
   </div>
 
@@ -1082,11 +1091,26 @@
     function varBadge(v, suffix) { if (v === null || v === undefined) return ''; var cls = v >= 0 ? 'green' : 'red'; var s = suffix || '%'; return '<span style="color: var(--' + cls + '); font-size:0.78rem">(' + (v>=0?'+':'') + v.toFixed(2).replace('.', ',') + s + ')</span>'; }
     function fmtMoneyShort(n) { if (n >= 1e9) return 'R$ ' + (n/1e9).toFixed(2).replace('.', ',') + ' bi'; if (n >= 1e6) return 'R$ ' + (n/1e6).toFixed(2).replace('.', ',') + ' mi'; return 'R$ ' + fmt(n); }
 
+    // Hide tooltip on any touch/click (mobile fix for stuck tooltip)
+    function hideAllTooltips() {
+      var gt = el('global-tooltip'); if (gt) gt.style.display = 'none';
+      var ct = document.querySelector('.chart-tooltip'); if (ct) ct.style.display = 'none';
+    }
+    document.addEventListener('touchstart', hideAllTooltips, {passive:true});
+    document.addEventListener('click', hideAllTooltips);
+
     function initTooltips(root) {
       var tip = el('global-tooltip'); if (!tip) return;
       var nodes = (root || document).querySelectorAll('th[data-tip], h2[data-tip], .metric-card[data-tip]');
       nodes.forEach(function(node) {
-        node.addEventListener('mouseenter', function() { tip.textContent = node.dataset.tip || ''; tip.style.display = 'block'; });
+        node.addEventListener('mouseenter', function() {
+          tip.textContent = node.dataset.tip || '';
+          tip.style.display = 'block';
+          // Auto-hide em dispositivos sem hover estável (mobile): some após 2.5s
+          if (window.matchMedia && window.matchMedia('(hover: none)').matches) {
+            setTimeout(function() { if (tip) tip.style.display = 'none'; }, 2500);
+          }
+        });
         node.addEventListener('mousemove', function(e) { tip.style.left = e.clientX + 'px'; tip.style.top = (e.clientY + 14) + 'px'; });
         node.addEventListener('mouseleave', function() { tip.style.display = 'none'; });
       });
@@ -1360,6 +1384,7 @@
           th.addEventListener('click', function() {
             var idx = parseInt(th.dataset.col);
             if (b4Sort.col === idx) b4Sort.asc = !b4Sort.asc; else { b4Sort.col = idx; b4Sort.asc = true; }
+            hideAllTooltips();
             renderB4Table();
           });
         });
