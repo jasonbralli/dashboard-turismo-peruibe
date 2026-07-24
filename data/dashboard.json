@@ -777,6 +777,15 @@
         "estabelecimentos_ativos": 9857
       },
       {
+        "cidade": "Praia Grande",
+        "populacao_2022": 349935,
+        "pib_2021_bi": 8.73,
+        "pib_per_capita": 24939,
+        "google_trends_10y": 54.5,
+        "google_trends_ultimo": 46,
+        "estabelecimentos_ativos": 62034
+      },
+      {
         "cidade": "Santos",
         "populacao_2022": 418608,
         "pib_2021_bi": 24.09,
@@ -793,6 +802,15 @@
         "google_trends_10y": 72.3,
         "google_trends_ultimo": 78,
         "estabelecimentos_ativos": 49515
+      },
+      {
+        "cidade": "Guarujá",
+        "populacao_2022": 287634,
+        "pib_2021_bi": 10.49,
+        "pib_per_capita": 36487,
+        "google_trends_10y": 50.5,
+        "google_trends_ultimo": 43,
+        "estabelecimentos_ativos": 45816
       }
     ],
     "ranking_nota": "PIB de 2021 (último disponível no IBGE). População do Censo 2022."
@@ -850,7 +868,7 @@
       "id": "F11",
       "nome": "Redesim/Receita Federal",
       "data_coleta": "2026-07-24",
-      "dados": "Estabelecimentos ativos de 5 cidades: Peruíbe 11.339, Itanhaém 15.526, Mongaguá 9.857, Santos 87.246, São Vicente 49.515 (ref 30/06/2026)"
+      "dados": "Estabelecimentos ativos de 7 cidades: Peruíbe 11.339, Itanhaém 15.526, Mongaguá 9.857, Praia Grande 62.034, Santos 87.246, São Vicente 49.515, Guarujá 45.816 (ref 30/06/2026)"
     },
     {
       "id": "IBGE",

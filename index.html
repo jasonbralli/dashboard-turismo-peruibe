@@ -963,6 +963,15 @@
         "estabelecimentos_ativos": 9857
       },
       {
+        "cidade": "Praia Grande",
+        "populacao_2022": 349935,
+        "pib_2021_bi": 8.73,
+        "pib_per_capita": 24939,
+        "google_trends_10y": 54.5,
+        "google_trends_ultimo": 46,
+        "estabelecimentos_ativos": 62034
+      },
+      {
         "cidade": "Santos",
         "populacao_2022": 418608,
         "pib_2021_bi": 24.09,
@@ -979,6 +988,15 @@
         "google_trends_10y": 72.3,
         "google_trends_ultimo": 78,
         "estabelecimentos_ativos": 49515
+      },
+      {
+        "cidade": "Guarujá",
+        "populacao_2022": 287634,
+        "pib_2021_bi": 10.49,
+        "pib_per_capita": 36487,
+        "google_trends_10y": 50.5,
+        "google_trends_ultimo": 43,
+        "estabelecimentos_ativos": 45816
       }
     ],
     "ranking_nota": "PIB de 2021 (último disponível no IBGE). População do Censo 2022."
@@ -1036,7 +1054,7 @@
       "id": "F11",
       "nome": "Redesim/Receita Federal",
       "data_coleta": "2026-07-24",
-      "dados": "Estabelecimentos ativos de 5 cidades: Peruíbe 11.339, Itanhaém 15.526, Mongaguá 9.857, Santos 87.246, São Vicente 49.515 (ref 30/06/2026)"
+      "dados": "Estabelecimentos ativos de 7 cidades: Peruíbe 11.339, Itanhaém 15.526, Mongaguá 9.857, Praia Grande 62.034, Santos 87.246, São Vicente 49.515, Guarujá 45.816 (ref 30/06/2026)"
     },
     {
       "id": "IBGE",
@@ -1306,14 +1324,47 @@
 
     function renderBloco4() {
       var b = state.data.bloco4_comparativo_regional;
-      var cols = ['Cidade', 'População (2022)', 'PIB (2021)', 'PIB per capita', 'Trends (média 10y)', 'Trends ( Jul/26)', 'Estabelec. Ativos'];
-      el('b4-thead').innerHTML = '<tr>' + cols.map(function(c) { return '<th>' + c + '</th>'; }).join('') + '</tr>';
-      el('b4-tbody').innerHTML = b.cidades.map(function(c) {
-        return '<tr><td>' + c.cidade + '</td><td>' + fmt(c.populacao_2022) + '</td><td>R$ ' + c.pib_2021_bi.toFixed(2).replace('.', ',') + ' bi</td><td>R$ ' + fmt(c.pib_per_capita) + '</td>' +
-          '<td>' + (c.google_trends_10y != null ? c.google_trends_10y.toFixed(1).replace('.', ',') : nd()) + '</td>' +
-          '<td>' + (c.google_trends_ultimo != null ? c.google_trends_ultimo : nd()) + '</td>' +
-          '<td>' + (c.estabelecimentos_ativos != null ? fmt(c.estabelecimentos_ativos) : nd()) + '</td></tr>';
-      }).join('');
+      var b4Sort = { col: null, asc: true };
+      var b4Cols = [
+        { label: 'Cidade', key: 'cidade', type: 'str' },
+        { label: 'População (2022)', key: 'populacao_2022', type: 'num' },
+        { label: 'PIB (2021)', key: 'pib_2021_bi', type: 'num' },
+        { label: 'PIB per capita', key: 'pib_per_capita', type: 'num' },
+        { label: 'Trends (média 10y)', key: 'google_trends_10y', type: 'num' },
+        { label: 'Trends ( Jul/26)', key: 'google_trends_ultimo', type: 'num' },
+        { label: 'Estabelec. Ativos', key: 'estabelecimentos_ativos', type: 'num' }
+      ];
+      function renderB4Table() {
+        var rows = b.cidades.slice();
+        if (b4Sort.col !== null) {
+          var col = b4Cols[b4Sort.col];
+          rows.sort(function(a, c) {
+            var va = a[col.key], vc = c[col.key];
+            if (va === null || va === undefined) return 1;
+            if (vc === null || vc === undefined) return -1;
+            if (col.type === 'str') return b4Sort.asc ? va.localeCompare(vc) : vc.localeCompare(va);
+            return b4Sort.asc ? va - vc : vc - va;
+          });
+        }
+        el('b4-thead').innerHTML = '<tr>' + b4Cols.map(function(c, i) {
+          var arrow = b4Sort.col === i ? (b4Sort.asc ? ' ↑' : ' ↓') : '';
+          return '<th data-col="' + i + '" style="cursor:pointer;user-select:none" data-tip="Clique para ordenar por ' + c.label + '">' + c.label + arrow + '</th>';
+        }).join('') + '</tr>';
+        el('b4-tbody').innerHTML = rows.map(function(c) {
+          return '<tr><td>' + c.cidade + '</td><td>' + fmt(c.populacao_2022) + '</td><td>R$ ' + c.pib_2021_bi.toFixed(2).replace('.', ',') + ' bi</td><td>R$ ' + fmt(c.pib_per_capita) + '</td>' +
+            '<td>' + (c.google_trends_10y != null ? c.google_trends_10y.toFixed(1).replace('.', ',') : nd()) + '</td>' +
+            '<td>' + (c.google_trends_ultimo != null ? c.google_trends_ultimo : nd()) + '</td>' +
+            '<td>' + (c.estabelecimentos_ativos != null ? fmt(c.estabelecimentos_ativos) : nd()) + '</td></tr>';
+        }).join('');
+        el('b4-thead').querySelectorAll('th').forEach(function(th) {
+          th.addEventListener('click', function() {
+            var idx = parseInt(th.dataset.col);
+            if (b4Sort.col === idx) b4Sort.asc = !b4Sort.asc; else { b4Sort.col = idx; b4Sort.asc = true; }
+            renderB4Table();
+          });
+        });
+      }
+      renderB4Table();
     }
 
     function renderFontes() {
