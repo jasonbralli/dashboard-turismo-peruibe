@@ -3,7 +3,7 @@
     "titulo": "Dashboard de Inteligência Turística — Peruíbe",
     "subtitle": "Dados consolidados de procura, sazonalidade, impacto econômico e comparativo regional",
     "ultima_atualizacao": "2026-07-24 (12 fontes coletadas)",
-    "periodo_coberto": "2016-2026",
+    "periodo_coberto": "2021-2026 (Trends), 2016-2026 (demais)",
     "fontes_count": 12
   },
   "perfil_municipio": {
@@ -34,283 +34,19 @@
     "airbnb_descricao": "Mais de mil anúncios (inclui quartos — não confundir com estabelecimentos)",
     "airbnb_nota": "Airbnb exibe 'mais de mil acomodações' mas inclui quartos compartilhados. Número de estabelecimentos é menor. Coleta detalhada pendente.",
     "airbnb_fonte": "Airbnb.com.br (24/07/2026)",
-    "google_trends_nota": "Coletado via pytrends — 127 datapoints mensais (jan/2016 a jul/2026) — termo 'Peruíbe' — 10 anos",
+    "google_trends_nota": "Coletado do Google Trends — 61 datapoints mensais (jul/2021 a jul/2026) — termo 'peruibe' (sem acento) — Worldwide — 5 anos (timeframe exato). Escolha do termo sem acento: capta buscas com ou sem acento (Google normaliza) e evita viés de adoção de autocorreção de teclados (razão peruibe/peruíbe caiu de 11x em 2016 para 1.5x em 2026). Topic ID /g/11bxfy9vvd foi avaliado e descartado (entity reconciliation instável pré-2019).",
     "google_trends_serie": [
       {
-        "mes": "2016-01",
-        "valor": 23
-      },
-      {
-        "mes": "2016-02",
-        "valor": 17
-      },
-      {
-        "mes": "2016-03",
-        "valor": 13
-      },
-      {
-        "mes": "2016-04",
-        "valor": 14
-      },
-      {
-        "mes": "2016-05",
-        "valor": 8
-      },
-      {
-        "mes": "2016-06",
-        "valor": 9
-      },
-      {
-        "mes": "2016-07",
-        "valor": 9
-      },
-      {
-        "mes": "2016-08",
-        "valor": 8
-      },
-      {
-        "mes": "2016-09",
-        "valor": 10
-      },
-      {
-        "mes": "2016-10",
-        "valor": 13
-      },
-      {
-        "mes": "2016-11",
-        "valor": 12
-      },
-      {
-        "mes": "2016-12",
-        "valor": 16
-      },
-      {
-        "mes": "2017-01",
-        "valor": 22
-      },
-      {
-        "mes": "2017-02",
-        "valor": 15
-      },
-      {
-        "mes": "2017-03",
-        "valor": 12
-      },
-      {
-        "mes": "2017-04",
-        "valor": 12
-      },
-      {
-        "mes": "2017-05",
-        "valor": 9
-      },
-      {
-        "mes": "2017-06",
-        "valor": 12
-      },
-      {
-        "mes": "2017-07",
-        "valor": 13
-      },
-      {
-        "mes": "2017-08",
-        "valor": 13
-      },
-      {
-        "mes": "2017-09",
-        "valor": 17
-      },
-      {
-        "mes": "2017-10",
-        "valor": 20
-      },
-      {
-        "mes": "2017-11",
-        "valor": 22
-      },
-      {
-        "mes": "2017-12",
-        "valor": 34
-      },
-      {
-        "mes": "2018-01",
-        "valor": 40
-      },
-      {
-        "mes": "2018-02",
-        "valor": 25
-      },
-      {
-        "mes": "2018-03",
-        "valor": 21
-      },
-      {
-        "mes": "2018-04",
-        "valor": 20
-      },
-      {
-        "mes": "2018-05",
-        "valor": 20
-      },
-      {
-        "mes": "2018-06",
-        "valor": 19
-      },
-      {
-        "mes": "2018-07",
-        "valor": 26
-      },
-      {
-        "mes": "2018-08",
-        "valor": 23
-      },
-      {
-        "mes": "2018-09",
-        "valor": 33
-      },
-      {
-        "mes": "2018-10",
-        "valor": 37
-      },
-      {
-        "mes": "2018-11",
-        "valor": 49
-      },
-      {
-        "mes": "2018-12",
-        "valor": 67
-      },
-      {
-        "mes": "2019-01",
-        "valor": 68
-      },
-      {
-        "mes": "2019-02",
-        "valor": 48
-      },
-      {
-        "mes": "2019-03",
-        "valor": 42
-      },
-      {
-        "mes": "2019-04",
-        "valor": 35
-      },
-      {
-        "mes": "2019-05",
-        "valor": 33
-      },
-      {
-        "mes": "2019-06",
-        "valor": 29
-      },
-      {
-        "mes": "2019-07",
-        "valor": 40
-      },
-      {
-        "mes": "2019-08",
-        "valor": 38
-      },
-      {
-        "mes": "2019-09",
-        "valor": 46
-      },
-      {
-        "mes": "2019-10",
-        "valor": 48
-      },
-      {
-        "mes": "2019-11",
-        "valor": 52
-      },
-      {
-        "mes": "2019-12",
-        "valor": 73
-      },
-      {
-        "mes": "2020-01",
-        "valor": 77
-      },
-      {
-        "mes": "2020-02",
-        "valor": 61
-      },
-      {
-        "mes": "2020-03",
-        "valor": 37
-      },
-      {
-        "mes": "2020-04",
-        "valor": 30
-      },
-      {
-        "mes": "2020-05",
-        "valor": 33
-      },
-      {
-        "mes": "2020-06",
-        "valor": 37
-      },
-      {
-        "mes": "2020-07",
-        "valor": 46
-      },
-      {
-        "mes": "2020-08",
-        "valor": 49
-      },
-      {
-        "mes": "2020-09",
-        "valor": 62
-      },
-      {
-        "mes": "2020-10",
-        "valor": 74
-      },
-      {
-        "mes": "2020-11",
-        "valor": 70
-      },
-      {
-        "mes": "2020-12",
-        "valor": 70
-      },
-      {
-        "mes": "2021-01",
-        "valor": 85
-      },
-      {
-        "mes": "2021-02",
-        "valor": 61
-      },
-      {
-        "mes": "2021-03",
-        "valor": 44
-      },
-      {
-        "mes": "2021-04",
-        "valor": 41
-      },
-      {
-        "mes": "2021-05",
-        "valor": 44
-      },
-      {
-        "mes": "2021-06",
-        "valor": 44
-      },
-      {
         "mes": "2021-07",
-        "valor": 52
+        "valor": 55
       },
       {
         "mes": "2021-08",
-        "valor": 53
+        "valor": 56
       },
       {
         "mes": "2021-09",
-        "valor": 60
+        "valor": 62
       },
       {
         "mes": "2021-10",
@@ -318,51 +54,51 @@
       },
       {
         "mes": "2021-11",
-        "valor": 60
-      },
-      {
-        "mes": "2021-12",
-        "valor": 76
-      },
-      {
-        "mes": "2022-01",
-        "valor": 91
-      },
-      {
-        "mes": "2022-02",
-        "valor": 69
-      },
-      {
-        "mes": "2022-03",
         "valor": 66
       },
       {
+        "mes": "2021-12",
+        "valor": 81
+      },
+      {
+        "mes": "2022-01",
+        "valor": 80
+      },
+      {
+        "mes": "2022-02",
+        "valor": 63
+      },
+      {
+        "mes": "2022-03",
+        "valor": 58
+      },
+      {
         "mes": "2022-04",
-        "valor": 61
+        "valor": 55
       },
       {
         "mes": "2022-05",
-        "valor": 47
+        "valor": 42
       },
       {
         "mes": "2022-06",
-        "valor": 51
+        "valor": 44
       },
       {
         "mes": "2022-07",
-        "valor": 49
+        "valor": 55
       },
       {
         "mes": "2022-08",
-        "valor": 50
+        "valor": 49
       },
       {
         "mes": "2022-09",
-        "valor": 50
+        "valor": 51
       },
       {
         "mes": "2022-10",
-        "valor": 61
+        "valor": 57
       },
       {
         "mes": "2022-11",
@@ -370,79 +106,79 @@
       },
       {
         "mes": "2022-12",
-        "valor": 78
+        "valor": 84
       },
       {
         "mes": "2023-01",
-        "valor": 91
+        "valor": 98
       },
       {
         "mes": "2023-02",
-        "valor": 67
+        "valor": 73
       },
       {
         "mes": "2023-03",
-        "valor": 48
+        "valor": 56
       },
       {
         "mes": "2023-04",
-        "valor": 53
+        "valor": 58
       },
       {
         "mes": "2023-05",
-        "valor": 38
-      },
-      {
-        "mes": "2023-06",
-        "valor": 42
-      },
-      {
-        "mes": "2023-07",
-        "valor": 50
-      },
-      {
-        "mes": "2023-08",
-        "valor": 49
-      },
-      {
-        "mes": "2023-09",
-        "valor": 56
-      },
-      {
-        "mes": "2023-10",
-        "valor": 57
-      },
-      {
-        "mes": "2023-11",
-        "valor": 60
-      },
-      {
-        "mes": "2023-12",
-        "valor": 82
-      },
-      {
-        "mes": "2024-01",
-        "valor": 93
-      },
-      {
-        "mes": "2024-02",
-        "valor": 56
-      },
-      {
-        "mes": "2024-03",
-        "valor": 49
-      },
-      {
-        "mes": "2024-04",
-        "valor": 44
-      },
-      {
-        "mes": "2024-05",
         "valor": 45
       },
       {
+        "mes": "2023-06",
+        "valor": 50
+      },
+      {
+        "mes": "2023-07",
+        "valor": 53
+      },
+      {
+        "mes": "2023-08",
+        "valor": 53
+      },
+      {
+        "mes": "2023-09",
+        "valor": 64
+      },
+      {
+        "mes": "2023-10",
+        "valor": 64
+      },
+      {
+        "mes": "2023-11",
+        "valor": 69
+      },
+      {
+        "mes": "2023-12",
+        "valor": 85
+      },
+      {
+        "mes": "2024-01",
+        "valor": 100
+      },
+      {
+        "mes": "2024-02",
+        "valor": 57
+      },
+      {
+        "mes": "2024-03",
+        "valor": 51
+      },
+      {
+        "mes": "2024-04",
+        "valor": 46
+      },
+      {
+        "mes": "2024-05",
+        "valor": 46
+      },
+      {
         "mes": "2024-06",
-        "valor": 49
+        "valor": 43
       },
       {
         "mes": "2024-07",
@@ -450,109 +186,109 @@
       },
       {
         "mes": "2024-08",
-        "valor": 46
-      },
-      {
-        "mes": "2024-09",
-        "valor": 54
-      },
-      {
-        "mes": "2024-10",
-        "valor": 58
-      },
-      {
-        "mes": "2024-11",
-        "valor": 57
-      },
-      {
-        "mes": "2024-12",
-        "valor": 79
-      },
-      {
-        "mes": "2025-01",
-        "valor": 94
-      },
-      {
-        "mes": "2025-02",
-        "valor": 54
-      },
-      {
-        "mes": "2025-03",
-        "valor": 51
-      },
-      {
-        "mes": "2025-04",
-        "valor": 49
-      },
-      {
-        "mes": "2025-05",
-        "valor": 39
-      },
-      {
-        "mes": "2025-06",
-        "valor": 39
-      },
-      {
-        "mes": "2025-07",
-        "valor": 46
-      },
-      {
-        "mes": "2025-08",
-        "valor": 47
-      },
-      {
-        "mes": "2025-09",
-        "valor": 51
-      },
-      {
-        "mes": "2025-10",
-        "valor": 56
-      },
-      {
-        "mes": "2025-11",
-        "valor": 60
-      },
-      {
-        "mes": "2025-12",
-        "valor": 87
-      },
-      {
-        "mes": "2026-01",
-        "valor": 100
-      },
-      {
-        "mes": "2026-02",
-        "valor": 69
-      },
-      {
-        "mes": "2026-03",
-        "valor": 51
-      },
-      {
-        "mes": "2026-04",
-        "valor": 57
-      },
-      {
-        "mes": "2026-05",
         "valor": 48
       },
       {
-        "mes": "2026-06",
+        "mes": "2024-09",
+        "valor": 52
+      },
+      {
+        "mes": "2024-10",
+        "valor": 57
+      },
+      {
+        "mes": "2024-11",
+        "valor": 56
+      },
+      {
+        "mes": "2024-12",
+        "valor": 77
+      },
+      {
+        "mes": "2025-01",
+        "valor": 86
+      },
+      {
+        "mes": "2025-02",
+        "valor": 52
+      },
+      {
+        "mes": "2025-03",
+        "valor": 48
+      },
+      {
+        "mes": "2025-04",
+        "valor": 44
+      },
+      {
+        "mes": "2025-05",
+        "valor": 35
+      },
+      {
+        "mes": "2025-06",
+        "valor": 35
+      },
+      {
+        "mes": "2025-07",
+        "valor": 36
+      },
+      {
+        "mes": "2025-08",
+        "valor": 38
+      },
+      {
+        "mes": "2025-09",
+        "valor": 44
+      },
+      {
+        "mes": "2025-10",
         "valor": 46
       },
       {
+        "mes": "2025-11",
+        "valor": 49
+      },
+      {
+        "mes": "2025-12",
+        "valor": 69
+      },
+      {
+        "mes": "2026-01",
+        "valor": 80
+      },
+      {
+        "mes": "2026-02",
+        "valor": 56
+      },
+      {
+        "mes": "2026-03",
+        "valor": 43
+      },
+      {
+        "mes": "2026-04",
+        "valor": 44
+      },
+      {
+        "mes": "2026-05",
+        "valor": 34
+      },
+      {
+        "mes": "2026-06",
+        "valor": 31
+      },
+      {
         "mes": "2026-07",
-        "valor": 54
+        "valor": 40
       }
     ],
-    "google_trends_media": 45.8,
+    "google_trends_media": 56.4,
     "google_trends_pico": {
-      "mes": "2026-01",
+      "mes": "2024-01",
       "valor": 100
     },
     "google_trends_ultimo": {
       "mes": "2026-07",
-      "valor": 54
+      "valor": 40
     },
     "cadastur_total_cadastamentos": 138,
     "cadastur_prestadores_unicos": 132,
@@ -747,70 +483,77 @@
   "bloco4_comparativo_regional": {
     "titulo": "Peruíbe vs Baixada Santista — Indicadores Socioeconômicos",
     "descricao": "Comparação entre municípios com dados automatizados via IBGE + Redesim + Google Trends",
-    "escopo_nota": "Todas as fontes são automatizáveis: IBGE API (PIB, População), Redesim (CNPJ), pytrends (Google Trends). Sem coleta manual necessária.",
+    "escopo_nota": "Todas as fontes são automatizáveis: IBGE API (PIB, População), Redesim (CNPJ), Google Trends (termo sem acento, 5 anos jul/2021–jul/2026, Worldwide). Termos: peruibe, itanhaem, mongagua, praia grande, santos, sao vicente, guaruja. Topic ID (município/cidade) testado e descartado para São Vicente — entity reconciliation instável (CV=40.5%).",
     "cidades": [
       {
         "cidade": "Peruíbe",
         "populacao_2022": 68352,
         "pib_2021_bi": 1.97,
         "pib_per_capita": 28766,
-        "google_trends_10y": 45.8,
-        "google_trends_ultimo": 54,
-        "estabelecimentos_ativos": 11339
+        "google_trends_10y": 56.4,
+        "google_trends_ultimo": 40,
+        "estabelecimentos_ativos": 11339,
+        "google_trends_nivel": "Baixa"
       },
       {
         "cidade": "Itanhaém",
         "populacao_2022": 112476,
         "pib_2021_bi": 2.37,
         "pib_per_capita": 21065,
-        "google_trends_10y": 50.1,
-        "google_trends_ultimo": 51,
-        "estabelecimentos_ativos": 15526
+        "google_trends_10y": 67.4,
+        "google_trends_ultimo": 53,
+        "estabelecimentos_ativos": 15526,
+        "google_trends_nivel": "Normal"
       },
       {
         "cidade": "Mongaguá",
         "populacao_2022": 61951,
         "pib_2021_bi": 1.25,
         "pib_per_capita": 20252,
-        "google_trends_10y": 45.5,
-        "google_trends_ultimo": 47,
-        "estabelecimentos_ativos": 9857
+        "google_trends_10y": 59.0,
+        "google_trends_ultimo": 44,
+        "estabelecimentos_ativos": 9857,
+        "google_trends_nivel": "Baixa"
       },
       {
         "cidade": "Praia Grande",
         "populacao_2022": 349935,
         "pib_2021_bi": 8.73,
         "pib_per_capita": 24939,
-        "google_trends_10y": 54.5,
-        "google_trends_ultimo": 46,
-        "estabelecimentos_ativos": 62034
+        "google_trends_10y": 55.6,
+        "google_trends_ultimo": 44,
+        "estabelecimentos_ativos": 62034,
+        "google_trends_nivel": "Baixa"
       },
       {
         "cidade": "Santos",
         "populacao_2022": 418608,
         "pib_2021_bi": 24.09,
         "pib_per_capita": 57548,
-        "google_trends_10y": 46.7,
-        "google_trends_ultimo": 39,
-        "estabelecimentos_ativos": 87246
+        "google_trends_10y": 70.0,
+        "google_trends_ultimo": 60,
+        "estabelecimentos_ativos": 87246,
+        "google_trends_nivel": "Normal"
       },
       {
         "cidade": "São Vicente",
         "populacao_2022": 329911,
         "pib_2021_bi": 6.12,
         "pib_per_capita": 18554,
-        "google_trends_10y": 72.3,
-        "google_trends_ultimo": 78,
-        "estabelecimentos_ativos": 49515
+        "google_trends_10y": 65.9,
+        "google_trends_ultimo": 53,
+        "estabelecimentos_ativos": 49515,
+        "google_trends_nivel": "Normal"
       },
       {
         "cidade": "Guarujá",
         "populacao_2022": 287634,
         "pib_2021_bi": 10.49,
         "pib_per_capita": 36487,
-        "google_trends_10y": 50.5,
-        "google_trends_ultimo": 43,
-        "estabelecimentos_ativos": 45816
+        "google_trends_10y": 55.6,
+        "google_trends_ultimo": 35,
+        "estabelecimentos_ativos": 45816,
+        "google_trends_nivel": "Baixa"
       }
     ],
     "ranking_nota": "PIB de 2021 (último disponível no IBGE). População do Censo 2022."
@@ -830,9 +573,9 @@
     },
     {
       "id": "F9",
-      "nome": "Google Trends (pytrends)",
-      "data_coleta": "2026-07-24",
-      "dados": "127 datapoints 'Peruíbe' jan/2016 a jul/2026 (10 anos)"
+      "nome": "Google Trends (termo 'peruibe' sem acento)",
+      "data_coleta": "2026-07-25",
+      "dados": "61 datapoints 'peruibe' (sem acento) jul/2021 a jul/2026 (5 anos, timeframe exato)"
     },
     {
       "id": "F3",
