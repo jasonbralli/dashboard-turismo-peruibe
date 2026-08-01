@@ -27,13 +27,13 @@
   "bloco1_procura": {
     "titulo": "Evolução da Procura Turística",
     "descricao": "Volume de hospedagens, anúncios Airbnb, interesse de busca Google e prestadores cadastrados",
-    "hospedagens_total": 434,
+    "hospedagens_total": 433,
     "hospedagens_fonte": "Booking.com",
-    "hospedagens_data_coleta": "2026-07-24",
-    "airbnb_anuncios": "1000+",
-    "airbnb_descricao": "Mais de mil anúncios (inclui quartos — não confundir com estabelecimentos)",
-    "airbnb_nota": "Airbnb exibe 'mais de mil acomodações' mas inclui quartos compartilhados. Número de estabelecimentos é menor. Coleta detalhada pendente.",
-    "airbnb_fonte": "Airbnb.com.br (24/07/2026)",
+    "hospedagens_data_coleta": "2026-07-25",
+    "airbnb_anuncios": "~270",
+    "airbnb_descricao": "Aproximadamente 270 listings ativos (15 paginas x ~18 por pagina). Numero consistente com ou sem datas.",
+    "airbnb_nota": "Numero real coletado via JSON scraping (25/07/2026). Testado com 4 cenarios: sem datas, feriado 15-17 Nov 2026, verao 10-17 Jan 2027, e 4 adultos — sempre 15 paginas. Airbnb exibe 'mais de mil' no UI mas isso inclue listings de cidades vizinhas da Baixada Santista na busca regional. O numero real para Peruibe (cidade especifica) e ~270. Varia por data: listings ja reservados sao substituidos por outros, mas o total se mantem estavel.",
+    "airbnb_fonte": "Airbnb.com.br - JSON scraping (25/07/2026)",
     "google_trends_nota": "Coletado do Google Trends — 61 datapoints mensais (jul/2021 a jul/2026) — termo 'peruibe' (sem acento) — Worldwide — 5 anos (timeframe exato). Escolha do termo sem acento: capta buscas com ou sem acento (Google normaliza) e evita viés de adoção de autocorreção de teclados (razão peruibe/peruíbe caiu de 11x em 2016 para 1.5x em 2026). Topic ID /g/11bxfy9vvd foi avaliado e descartado (entity reconciliation instável pré-2019).",
     "google_trends_serie": [
       {
@@ -341,25 +341,25 @@
     "descricao": "Indicadores mensais de desempenho hoteleiro do Litoral Paulista (inclui Peruíbe). Estes dados são regionais, não municipais.",
     "escopo_nota": "⚠️ Dados do Litoral Paulista (região), não de Peruíbe isoladamente. ABIH-SP não divulga dados por município.",
     "mrt_referencia": "Litoral Paulista (9 municípios, inclui Peruíbe)",
-    "fonte": "ABIH-SP — 71ª edição (Maio/26)",
+    "fonte": "ABIH-SP — 72ª edição (Junho/26)",
     "dados_mensais": [
       {
-        "mes": "Mai/2026",
-        "to": 39.42,
-        "to_var_vs_abr": 1.48,
-        "to_var_vs_ano": -4.24,
-        "dm": 669.68,
-        "dm_var_vs_abr": -2.95,
-        "dm_var_vs_ano": 11.96,
-        "revpar": 263.99,
-        "revpar_var_vs_abr": -1.51,
-        "revpar_var_vs_ano": 7.21
+        "mes": "Jun/2026",
+        "to": 26.54,
+        "to_var_vs_mai": -32.67,
+        "to_var_vs_ano": null,
+        "dm": 687.45,
+        "dm_var_vs_mai": 2.65,
+        "dm_var_vs_ano": null,
+        "revpar": 182.45,
+        "revpar_var_vs_mai": -30.89,
+        "revpar_var_vs_ano": null
       }
     ],
     "acumulado_2026": {
-      "to": 52.21,
-      "dm": 664.19,
-      "revpar": 346.95
+      "to": 47.94,
+      "dm": 668.07,
+      "revpar": 319.54
     },
     "infraestrutura": {
       "propriedades": 562,
@@ -370,7 +370,7 @@
       "municipios": 9,
       "habitantes": 1848654
     },
-    "amostragem": "107 propriedades (1,42% do total), 459 municípios (70,16%), 266.939 UHs (89,49%)",
+    "amostragem": "124 propriedades (1,64% do total), 413 municípios (64,03%), 176.432 UHs (59,15%)",
     "respondentes": "2 municípios responderam — 201 propriedades / 6.285 UHs",
     "projecao_verao_2526": {
       "sp_total_turistas": "16.7M",
@@ -391,9 +391,9 @@
         "nota": "Pico sazonal tradicional"
       },
       {
-        "evento": "Maio/26",
+        "evento": "Jun/26",
         "intensidade": "Baixa",
-        "nota": "Outono/inverno arrefece demanda dos litorais (ABIH-SP Mai/26)"
+        "nota": "Inverno impacta litorais — TO cai 32,7% vs Mai/26 (ABIH-SP Jun/26)"
       }
     ]
   },
@@ -567,9 +567,9 @@
     },
     {
       "id": "F2",
-      "nome": "ABIH-SP 71ª edição",
-      "data_coleta": "Maio/26",
-      "dados": "TO 39,42% / DM R$ 669,68 / RevPar R$ 263,99 — Litoral Paulista"
+      "nome": "ABIH-SP 72ª edição",
+      "data_coleta": "Junho/26",
+      "dados": "TO 26,54% / DM R$ 687,45 / RevPar R$ 182,45 — Litoral Paulista"
     },
     {
       "id": "F9",

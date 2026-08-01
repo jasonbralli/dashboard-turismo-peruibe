@@ -10,7 +10,7 @@ Dashboard interativo com dados consolidados de procura turística, sazonalidade,
 |-------|---------|--------|
 | **Perfil do Município** | Área, população, PIB, títulos (UNESCO/Ramsar) | IBGE Censo 2022 + PIB 2021 |
 | **Evolução da Procura** | Hospedagens, Airbnb, Google Trends (5 anos), CADASTUR | Booking, Airbnb, Google Trends, CADASTUR |
-| **Padrões Sazonais** | Taxa de ocupação, diária média, RevPar (Litoral Paulista) | ABIH-SP 71ª edição |
+| **Padrões Sazonais** | Taxa de ocupação, diária média, RevPar (Litoral Paulista) | ABIH-SP 72ª edição |
 | **Retorno Econômico** | Empregos, empresas, estabelecimentos ativos | CAGED, JUCESP, Redesim/Receita |
 | **Comparativo Regional** | PIB, população, Trends, CNPJ ativos | IBGE + Redesim + Google Trends |
 
@@ -82,7 +82,7 @@ Este dashboardsegue o princípio de **transparência sem exposição** — todos
 - Google Trends: jul/2021 a jul/2026 (5 anos, termo "peruibe" sem acento, renormalizado)
 - IBGE Censo: 2022
 - IBGE PIB: 2021 (último disponível)
-- ABIH-SP: Maio/2026
+- ABIH-SP: Junho/2026
 - CADASTUR: Julho/2026
 - CAGED: acumulado jan-mai/2026
 - Redesim: base CNPJ 30/06/2026
