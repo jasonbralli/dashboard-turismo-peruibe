@@ -22,7 +22,9 @@
     "microrregiao": "Itanhaém",
     "mesorregiao": "Litoral Sul Paulista",
     "ibge_codigo": 3537602,
-    "fonte": "IBGE Censo 2022 + PIB 2021 + PDTur 2022"
+    "fonte": "IBGE Censo 2022 + PIB 2021 + PDTur 2022",
+    "data": "2026-07-24",
+    "forma": "manual"
   },
   "bloco1_procura": {
     "titulo": "Evolução da Procura Turística",
@@ -386,14 +388,17 @@
         "interest": 35,
         "increase": "-30%"
       }
-    ]
+    ],
+    "data": "2026-11-05",
+    "fonte": "Google Trends (nov/2021-nov/2026) + Booking.com + Airbnb.com.br + CADASTUR (Ministério do Turismo)",
+    "forma": "manual"
   },
   "bloco2_sazonalidade": {
     "titulo": "Padrões Sazonais e Previsão — Litoral Paulista",
     "descricao": "Indicadores mensais de desempenho hoteleiro do Litoral Paulista (inclui Peruíbe). Estes dados são regionais, não municipais.",
     "escopo_nota": "⚠️ Dados do Litoral Paulista (região), não de Peruíbe isoladamente. ABIH-SP não divulga dados por município.",
     "mrt_referencia": "Litoral Paulista (9 municípios, inclui Peruíbe)",
-    "fonte": "ABIH-SP — 72ª edição (Junho/26)",
+    "fonte": "ABIH-SP — 72ª edição (Junho/26), MRT Litoral Paulista",
     "dados_mensais": [
       {
         "mes": "Jun/2026",
@@ -447,7 +452,9 @@
         "intensidade": "Baixa",
         "nota": "Inverno impacta litorais — TO cai 32,7% vs Mai/26 (ABIH-SP Jun/26)"
       }
-    ]
+    ],
+    "data": "2026-06",
+    "forma": "manual"
   },
   "bloco3_impacto_economico": {
     "titulo": "Retorno Econômico do Turismo",
@@ -530,7 +537,10 @@
     "cadastur_total": 138,
     "cadastur_unicos": 132,
     "iss_turistico": null,
-    "iss_turistico_nota": "Próxima rodada — Portal Transparência SP (restrição eleições 2026)"
+    "iss_turistico_nota": "Próxima rodada — Portal Transparência SP (restrição eleições 2026)",
+    "data": "2026-06-30",
+    "fonte": "Novo CAGED (Painel PowerBI) + JUCESP/CIET + Redesim/Receita Federal + CADASTUR",
+    "forma": "manual"
   },
   "bloco4_comparativo_regional": {
     "titulo": "Peruíbe vs Baixada Santista — Indicadores Socioeconômicos",
@@ -608,7 +618,10 @@
         "google_trends_nivel": "Baixa"
       }
     ],
-    "ranking_nota": "PIB de 2021 (último disponível no IBGE). População do Censo 2022."
+    "ranking_nota": "PIB de 2021 (último disponível no IBGE). População do Censo 2022.",
+    "data": "2026-11-05",
+    "fonte": "IBGE (Censo 2022 + PIB 2021) + Redesim/Receita Federal + Google Trends (nov/2021-nov/2026)",
+    "forma": "manual"
   },
   "fontes_utilizadas": [
     {
