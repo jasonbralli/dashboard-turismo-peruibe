@@ -2,7 +2,7 @@
   "meta": {
     "titulo": "Dashboard de Inteligência Turística — Peruíbe",
     "subtitle": "Dados consolidados de procura, sazonalidade, impacto econômico e comparativo regional",
-    "ultima_atualizacao": "2026-07-24 (12 fontes coletadas)",
+    "ultima_atualizacao": "2026-11-05 (12 fontes coletadas)",
     "periodo_coberto": "2021-2026 (Trends), 2016-2026 (demais)",
     "fontes_count": 12
   },
@@ -34,260 +34,260 @@
     "airbnb_descricao": "Aproximadamente 270 listings ativos (15 paginas x ~18 por pagina). Numero consistente com ou sem datas.",
     "airbnb_nota": "Numero real coletado via JSON scraping (25/07/2026). Testado com 4 cenarios: sem datas, feriado 15-17 Nov 2026, verao 10-17 Jan 2027, e 4 adultos — sempre 15 paginas. Airbnb exibe 'mais de mil' no UI mas isso inclue listings de cidades vizinhas da Baixada Santista na busca regional. O numero real para Peruibe (cidade especifica) e ~270. Varia por data: listings ja reservados sao substituidos por outros, mas o total se mantem estavel.",
     "airbnb_fonte": "Airbnb.com.br - JSON scraping (25/07/2026)",
-    "google_trends_nota": "Coletado do Google Trends — 61 datapoints mensais (jul/2021 a jul/2026) — termo 'peruibe' (sem acento) — Worldwide — 5 anos (timeframe exato). Escolha do termo sem acento: capta buscas com ou sem acento (Google normaliza) e evita viés de adoção de autocorreção de teclados (razão peruibe/peruíbe caiu de 11x em 2016 para 1.5x em 2026). Topic ID /g/11bxfy9vvd foi avaliado e descartado (entity reconciliation instável pré-2019).",
+    "google_trends_nota": "Coletado do Google Trends — 61 datapoints mensais (nov/2021 a nov/2026) — termo 'peruibe' (sem acento) — Worldwide. Escolha do termo sem acento: capta buscas com ou sem acento (Google normaliza) e evita viés de adoção de autocorreção de teclados (razão peruibe/peruíbe caiu de 11x em 2016 para 1.5x em 2026). Topic ID /g/11bxfy9vvd foi avaliado e descartado (entity reconciliation instável pré-2019). Serie atualizada com coleta de 05/11/2026 (time_series_BR_20211105 + searched_with_top-searches_queries_BR).",
     "google_trends_serie": [
       {
-        "mes": "2021-07",
-        "valor": 55
-      },
-      {
-        "mes": "2021-08",
-        "valor": 56
-      },
-      {
-        "mes": "2021-09",
-        "valor": 62
-      },
-      {
-        "mes": "2021-10",
-        "valor": 62
-      },
-      {
         "mes": "2021-11",
-        "valor": 66
+        "valor": 54
       },
       {
         "mes": "2021-12",
-        "valor": 81
-      },
-      {
-        "mes": "2022-01",
-        "valor": 80
-      },
-      {
-        "mes": "2022-02",
-        "valor": 63
-      },
-      {
-        "mes": "2022-03",
-        "valor": 58
-      },
-      {
-        "mes": "2022-04",
-        "valor": 55
-      },
-      {
-        "mes": "2022-05",
-        "valor": 42
-      },
-      {
-        "mes": "2022-06",
-        "valor": 44
-      },
-      {
-        "mes": "2022-07",
-        "valor": 55
-      },
-      {
-        "mes": "2022-08",
-        "valor": 49
-      },
-      {
-        "mes": "2022-09",
-        "valor": 51
-      },
-      {
-        "mes": "2022-10",
-        "valor": 57
-      },
-      {
-        "mes": "2022-11",
-        "valor": 64
-      },
-      {
-        "mes": "2022-12",
-        "valor": 84
-      },
-      {
-        "mes": "2023-01",
-        "valor": 98
-      },
-      {
-        "mes": "2023-02",
         "valor": 73
       },
       {
-        "mes": "2023-03",
-        "valor": 56
+        "mes": "2022-01",
+        "valor": 70
       },
       {
-        "mes": "2023-04",
-        "valor": 58
-      },
-      {
-        "mes": "2023-05",
-        "valor": 45
-      },
-      {
-        "mes": "2023-06",
-        "valor": 50
-      },
-      {
-        "mes": "2023-07",
-        "valor": 53
-      },
-      {
-        "mes": "2023-08",
-        "valor": 53
-      },
-      {
-        "mes": "2023-09",
-        "valor": 64
-      },
-      {
-        "mes": "2023-10",
-        "valor": 64
-      },
-      {
-        "mes": "2023-11",
-        "valor": 69
-      },
-      {
-        "mes": "2023-12",
-        "valor": 85
-      },
-      {
-        "mes": "2024-01",
-        "valor": 100
-      },
-      {
-        "mes": "2024-02",
-        "valor": 57
-      },
-      {
-        "mes": "2024-03",
+        "mes": "2022-02",
         "valor": 51
       },
       {
-        "mes": "2024-04",
+        "mes": "2022-03",
         "valor": 46
       },
       {
-        "mes": "2024-05",
-        "valor": 46
+        "mes": "2022-04",
+        "valor": 41
       },
       {
-        "mes": "2024-06",
+        "mes": "2022-05",
+        "valor": 32
+      },
+      {
+        "mes": "2022-06",
+        "valor": 33
+      },
+      {
+        "mes": "2022-07",
         "valor": 43
       },
       {
-        "mes": "2024-07",
-        "valor": 48
-      },
-      {
-        "mes": "2024-08",
-        "valor": 48
-      },
-      {
-        "mes": "2024-09",
-        "valor": 52
-      },
-      {
-        "mes": "2024-10",
-        "valor": 57
-      },
-      {
-        "mes": "2024-11",
-        "valor": 56
-      },
-      {
-        "mes": "2024-12",
-        "valor": 77
-      },
-      {
-        "mes": "2025-01",
-        "valor": 86
-      },
-      {
-        "mes": "2025-02",
-        "valor": 52
-      },
-      {
-        "mes": "2025-03",
-        "valor": 48
-      },
-      {
-        "mes": "2025-04",
-        "valor": 44
-      },
-      {
-        "mes": "2025-05",
-        "valor": 35
-      },
-      {
-        "mes": "2025-06",
-        "valor": 35
-      },
-      {
-        "mes": "2025-07",
+        "mes": "2022-08",
         "valor": 36
       },
       {
-        "mes": "2025-08",
-        "valor": 38
+        "mes": "2022-09",
+        "valor": 40
       },
       {
-        "mes": "2025-09",
-        "valor": 44
-      },
-      {
-        "mes": "2025-10",
-        "valor": 46
-      },
-      {
-        "mes": "2025-11",
-        "valor": 49
-      },
-      {
-        "mes": "2025-12",
-        "valor": 69
-      },
-      {
-        "mes": "2026-01",
-        "valor": 80
-      },
-      {
-        "mes": "2026-02",
-        "valor": 56
-      },
-      {
-        "mes": "2026-03",
+        "mes": "2022-10",
         "valor": 43
       },
       {
-        "mes": "2026-04",
+        "mes": "2022-11",
+        "valor": 54
+      },
+      {
+        "mes": "2022-12",
+        "valor": 73
+      },
+      {
+        "mes": "2023-01",
+        "valor": 84
+      },
+      {
+        "mes": "2023-02",
+        "valor": 60
+      },
+      {
+        "mes": "2023-03",
+        "valor": 47
+      },
+      {
+        "mes": "2023-04",
+        "valor": 49
+      },
+      {
+        "mes": "2023-05",
+        "valor": 37
+      },
+      {
+        "mes": "2023-06",
+        "valor": 41
+      },
+      {
+        "mes": "2023-07",
+        "valor": 45
+      },
+      {
+        "mes": "2023-08",
+        "valor": 40
+      },
+      {
+        "mes": "2023-09",
+        "valor": 56
+      },
+      {
+        "mes": "2023-10",
+        "valor": 55
+      },
+      {
+        "mes": "2023-11",
+        "valor": 59
+      },
+      {
+        "mes": "2023-12",
+        "valor": 84
+      },
+      {
+        "mes": "2024-01",
+        "valor": 89
+      },
+      {
+        "mes": "2024-02",
+        "valor": 55
+      },
+      {
+        "mes": "2024-03",
+        "valor": 46
+      },
+      {
+        "mes": "2024-04",
+        "valor": 39
+      },
+      {
+        "mes": "2024-05",
+        "valor": 36
+      },
+      {
+        "mes": "2024-06",
+        "valor": 37
+      },
+      {
+        "mes": "2024-07",
+        "valor": 40
+      },
+      {
+        "mes": "2024-08",
+        "valor": 40
+      },
+      {
+        "mes": "2024-09",
         "valor": 44
       },
       {
-        "mes": "2026-05",
-        "valor": 34
+        "mes": "2024-10",
+        "valor": 47
       },
       {
-        "mes": "2026-06",
+        "mes": "2024-11",
+        "valor": 49
+      },
+      {
+        "mes": "2024-12",
+        "valor": 72
+      },
+      {
+        "mes": "2025-01",
+        "valor": 82
+      },
+      {
+        "mes": "2025-02",
+        "valor": 46
+      },
+      {
+        "mes": "2025-03",
+        "valor": 41
+      },
+      {
+        "mes": "2025-04",
+        "valor": 38
+      },
+      {
+        "mes": "2025-05",
         "valor": 31
       },
       {
+        "mes": "2025-06",
+        "valor": 29
+      },
+      {
+        "mes": "2025-07",
+        "valor": 34
+      },
+      {
+        "mes": "2025-08",
+        "valor": 31
+      },
+      {
+        "mes": "2025-09",
+        "valor": 39
+      },
+      {
+        "mes": "2025-10",
+        "valor": 43
+      },
+      {
+        "mes": "2025-11",
+        "valor": 42
+      },
+      {
+        "mes": "2025-12",
+        "valor": 64
+      },
+      {
+        "mes": "2026-01",
+        "valor": 67
+      },
+      {
+        "mes": "2026-02",
+        "valor": 50
+      },
+      {
+        "mes": "2026-03",
+        "valor": 35
+      },
+      {
+        "mes": "2026-04",
+        "valor": 37
+      },
+      {
+        "mes": "2026-05",
+        "valor": 30
+      },
+      {
+        "mes": "2026-06",
+        "valor": 26
+      },
+      {
         "mes": "2026-07",
+        "valor": 31
+      },
+      {
+        "mes": "2026-08",
+        "valor": 33
+      },
+      {
+        "mes": "2026-09",
+        "valor": 34
+      },
+      {
+        "mes": "2026-10",
+        "valor": 36
+      },
+      {
+        "mes": "2026-11",
         "valor": 40
       }
     ],
-    "google_trends_media": 56.4,
+    "google_trends_media": 47.2,
     "google_trends_pico": {
       "mes": "2024-01",
-      "valor": 100
+      "valor": 89
     },
     "google_trends_ultimo": {
-      "mes": "2026-07",
+      "mes": "2026-11",
       "valor": 40
     },
     "cadastur_total_cadastamentos": 138,
@@ -334,7 +334,59 @@
         "quantidade": 1
       }
     ],
-    "cadastur_fonte": "CADASTUR (Ministério do Turismo) — 07/2026"
+    "cadastur_fonte": "CADASTUR (Ministério do Turismo) — 07/2026",
+    "google_trends_top_queries": [
+      {
+        "query": "tempo peruibe",
+        "interest": 100,
+        "increase": "5%"
+      },
+      {
+        "query": "peruibe tempo",
+        "interest": 99,
+        "increase": "9%"
+      },
+      {
+        "query": "previsão do peruibe",
+        "interest": 55,
+        "increase": "30%"
+      },
+      {
+        "query": "previsão peruibe",
+        "interest": 53,
+        "increase": "20%"
+      },
+      {
+        "query": "peruibe sp",
+        "interest": 51,
+        "increase": "-10%"
+      },
+      {
+        "query": "peruibe previsão do tempo",
+        "interest": 50,
+        "increase": "10%"
+      },
+      {
+        "query": "previsão tempo peruibe",
+        "interest": 50,
+        "increase": "20%"
+      },
+      {
+        "query": "previsão do tempo peruibe",
+        "interest": 46,
+        "increase": "6%"
+      },
+      {
+        "query": "praia peruibe",
+        "interest": 40,
+        "increase": "-20%"
+      },
+      {
+        "query": "peruibe praia",
+        "interest": 35,
+        "increase": "-30%"
+      }
+    ]
   },
   "bloco2_sazonalidade": {
     "titulo": "Padrões Sazonais e Previsão — Litoral Paulista",
