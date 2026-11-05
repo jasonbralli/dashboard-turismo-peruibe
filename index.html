@@ -193,688 +193,634 @@
   <div id="global-tooltip"></div>
 
   <script id="dashboard-data" type="application/json">
-{
-  "meta": {
-    "titulo": "Dashboard de Inteligência Turística — Peruíbe",
-    "subtitle": "Dados consolidados de procura, sazonalidade, impacto econômico e comparativo regional",
-    "ultima_atualizacao": "2026-11-05 (12 fontes coletadas)",
-    "periodo_coberto": "2021-2026 (Trends), 2016-2026 (demais)",
-    "fontes_count": 12
-  },
-  "perfil_municipio": {
-    "area_km2": 326,
-    "populacao_2022": 68352,
-    "populacao_2010": 72793,
-    "pib_2021_bi": 1.97,
-    "pib_per_capita_2021": 28766,
-    "estancia_balnearia": true,
-    "estancia_posicao": "1 de 15 no SP",
-    "mata_atlantica_pct": 68,
-    "titulos": [
-      "UNESCO",
-      "Ramsar"
-    ],
-    "microrregiao": "Itanhaém",
-    "mesorregiao": "Litoral Sul Paulista",
-    "ibge_codigo": 3537602,
-    "fonte": "IBGE Censo 2022 + PIB 2021 + PDTur 2022"
-  },
-  "bloco1_procura": {
-    "titulo": "Evolução da Procura Turística",
-    "descricao": "Volume de hospedagens, anúncios Airbnb, interesse de busca Google e prestadores cadastrados",
-    "hospedagens_total": 433,
-    "hospedagens_fonte": "Booking.com",
-    "hospedagens_data_coleta": "2026-07-25",
-    "airbnb_anuncios": "~270",
-    "airbnb_descricao": "Aproximadamente 270 listings ativos (15 paginas x ~18 por pagina). Numero consistente com ou sem datas.",
-    "airbnb_nota": "Numero real coletado via JSON scraping (25/07/2026). Testado com 4 cenarios: sem datas, feriado 15-17 Nov 2026, verao 10-17 Jan 2027, e 4 adultos — sempre 15 paginas. Airbnb exibe 'mais de mil' no UI mas isso inclue listings de cidades vizinhas da Baixada Santista na busca regional. O numero real para Peruibe (cidade especifica) e ~270. Varia por data: listings ja reservados sao substituidos por outros, mas o total se mantem estavel.",
-    "airbnb_fonte": "Airbnb.com.br - JSON scraping (25/07/2026)",
-    "google_trends_nota": "Coletado do Google Trends — 61 datapoints mensais (nov/2021 a nov/2026) — termo 'peruibe' (sem acento) — Worldwide. Escolha do termo sem acento: capta buscas com ou sem acento (Google normaliza) e evita viés de adoção de autocorreção de teclados (razão peruibe/peruíbe caiu de 11x em 2016 para 1.5x em 2026). Topic ID /g/11bxfy9vvd foi avaliado e descartado (entity reconciliation instável pré-2019). Serie atualizada com coleta de 05/11/2026 (time_series_BR_20211105 + searched_with_top-searches_queries_BR).",
-    "google_trends_serie": [
-      {
-        "mes": "2021-11",
-        "valor": 54
-      },
-      {
-        "mes": "2021-12",
-        "valor": 73
-      },
-      {
-        "mes": "2022-01",
-        "valor": 70
-      },
-      {
-        "mes": "2022-02",
-        "valor": 51
-      },
-      {
-        "mes": "2022-03",
-        "valor": 46
-      },
-      {
-        "mes": "2022-04",
-        "valor": 41
-      },
-      {
-        "mes": "2022-05",
-        "valor": 32
-      },
-      {
-        "mes": "2022-06",
-        "valor": 33
-      },
-      {
-        "mes": "2022-07",
-        "valor": 43
-      },
-      {
-        "mes": "2022-08",
-        "valor": 36
-      },
-      {
-        "mes": "2022-09",
-        "valor": 40
-      },
-      {
-        "mes": "2022-10",
-        "valor": 43
-      },
-      {
-        "mes": "2022-11",
-        "valor": 54
-      },
-      {
-        "mes": "2022-12",
-        "valor": 73
-      },
-      {
-        "mes": "2023-01",
-        "valor": 84
-      },
-      {
-        "mes": "2023-02",
-        "valor": 60
-      },
-      {
-        "mes": "2023-03",
-        "valor": 47
-      },
-      {
-        "mes": "2023-04",
-        "valor": 49
-      },
-      {
-        "mes": "2023-05",
-        "valor": 37
-      },
-      {
-        "mes": "2023-06",
-        "valor": 41
-      },
-      {
-        "mes": "2023-07",
-        "valor": 45
-      },
-      {
-        "mes": "2023-08",
-        "valor": 40
-      },
-      {
-        "mes": "2023-09",
-        "valor": 56
-      },
-      {
-        "mes": "2023-10",
-        "valor": 55
-      },
-      {
-        "mes": "2023-11",
-        "valor": 59
-      },
-      {
-        "mes": "2023-12",
-        "valor": 84
-      },
-      {
-        "mes": "2024-01",
-        "valor": 89
-      },
-      {
-        "mes": "2024-02",
-        "valor": 55
-      },
-      {
-        "mes": "2024-03",
-        "valor": 46
-      },
-      {
-        "mes": "2024-04",
-        "valor": 39
-      },
-      {
-        "mes": "2024-05",
-        "valor": 36
-      },
-      {
-        "mes": "2024-06",
-        "valor": 37
-      },
-      {
-        "mes": "2024-07",
-        "valor": 40
-      },
-      {
-        "mes": "2024-08",
-        "valor": 40
-      },
-      {
-        "mes": "2024-09",
-        "valor": 44
-      },
-      {
-        "mes": "2024-10",
-        "valor": 47
-      },
-      {
-        "mes": "2024-11",
-        "valor": 49
-      },
-      {
-        "mes": "2024-12",
-        "valor": 72
-      },
-      {
-        "mes": "2025-01",
-        "valor": 82
-      },
-      {
-        "mes": "2025-02",
-        "valor": 46
-      },
-      {
-        "mes": "2025-03",
-        "valor": 41
-      },
-      {
-        "mes": "2025-04",
-        "valor": 38
-      },
-      {
-        "mes": "2025-05",
-        "valor": 31
-      },
-      {
-        "mes": "2025-06",
-        "valor": 29
-      },
-      {
-        "mes": "2025-07",
-        "valor": 34
-      },
-      {
-        "mes": "2025-08",
-        "valor": 31
-      },
-      {
-        "mes": "2025-09",
-        "valor": 39
-      },
-      {
-        "mes": "2025-10",
-        "valor": 43
-      },
-      {
-        "mes": "2025-11",
-        "valor": 42
-      },
-      {
-        "mes": "2025-12",
-        "valor": 64
-      },
-      {
-        "mes": "2026-01",
-        "valor": 67
-      },
-      {
-        "mes": "2026-02",
-        "valor": 50
-      },
-      {
-        "mes": "2026-03",
-        "valor": 35
-      },
-      {
-        "mes": "2026-04",
-        "valor": 37
-      },
-      {
-        "mes": "2026-05",
-        "valor": 30
-      },
-      {
-        "mes": "2026-06",
-        "valor": 26
-      },
-      {
-        "mes": "2026-07",
-        "valor": 31
-      },
-      {
-        "mes": "2026-08",
-        "valor": 33
-      },
-      {
-        "mes": "2026-09",
-        "valor": 34
-      },
-      {
-        "mes": "2026-10",
-        "valor": 36
-      },
-      {
-        "mes": "2026-11",
-        "valor": 40
-      }
-    ],
-    "google_trends_media": 47.2,
-    "google_trends_pico": {
-      "mes": "2024-01",
-      "valor": 89
-    },
-    "google_trends_ultimo": {
-      "mes": "2026-11",
-      "valor": 40
-    },
-    "cadastur_total_cadastamentos": 138,
-    "cadastur_prestadores_unicos": 132,
-    "cadastur_atividades": [
-      {
-        "atividade": "Guia de Turismo",
-        "quantidade": 68
-      },
-      {
-        "atividade": "Meio de Hospedagem",
-        "quantidade": 27
-      },
-      {
-        "atividade": "Agência de Turismo",
-        "quantidade": 19
-      },
-      {
-        "atividade": "Transportadora Turística",
-        "quantidade": 9
-      },
-      {
-        "atividade": "Prestador Especializado em Segmentos Turísticos",
-        "quantidade": 5
-      },
-      {
-        "atividade": "Organizadora de Eventos",
-        "quantidade": 3
-      },
-      {
-        "atividade": "Restaurante, Cafeteria, Bar e Similares",
-        "quantidade": 3
-      },
-      {
-        "atividade": "Empreendimento de Apoio ao Turismo Náutico ou à Pesca Desportiva",
-        "quantidade": 2
-      },
-      {
-        "atividade": "Guia de Turismo Guia-Motorista",
-        "quantidade": 1
-      },
-      {
-        "atividade": "Prestador de Infraestrutura de Apoio para Eventos",
-        "quantidade": 1
-      }
-    ],
-    "cadastur_fonte": "CADASTUR (Ministério do Turismo) — 07/2026",
-    "google_trends_top_queries": [
-      {
-        "query": "tempo peruibe",
-        "interest": 100,
-        "increase": "5%"
-      },
-      {
-        "query": "peruibe tempo",
-        "interest": 99,
-        "increase": "9%"
-      },
-      {
-        "query": "previsão do peruibe",
-        "interest": 55,
-        "increase": "30%"
-      },
-      {
-        "query": "previsão peruibe",
-        "interest": 53,
-        "increase": "20%"
-      },
-      {
-        "query": "peruibe sp",
-        "interest": 51,
-        "increase": "-10%"
-      },
-      {
-        "query": "peruibe previsão do tempo",
-        "interest": 50,
-        "increase": "10%"
-      },
-      {
-        "query": "previsão tempo peruibe",
-        "interest": 50,
-        "increase": "20%"
-      },
-      {
-        "query": "previsão do tempo peruibe",
-        "interest": 46,
-        "increase": "6%"
-      },
-      {
-        "query": "praia peruibe",
-        "interest": 40,
-        "increase": "-20%"
-      },
-      {
-        "query": "peruibe praia",
-        "interest": 35,
-        "increase": "-30%"
-      }
-    ]
-  },
-  "bloco2_sazonalidade": {
-    "titulo": "Padrões Sazonais e Previsão — Litoral Paulista",
-    "descricao": "Indicadores mensais de desempenho hoteleiro do Litoral Paulista (inclui Peruíbe). Estes dados são regionais, não municipais.",
-    "escopo_nota": "⚠️ Dados do Litoral Paulista (região), não de Peruíbe isoladamente. ABIH-SP não divulga dados por município.",
-    "mrt_referencia": "Litoral Paulista (9 municípios, inclui Peruíbe)",
-    "fonte": "ABIH-SP — 72ª edição (Junho/26)",
-    "dados_mensais": [
-      {
-        "mes": "Jun/2026",
-        "to": 26.54,
-        "to_var_vs_mai": -32.67,
-        "to_var_vs_ano": null,
-        "dm": 687.45,
-        "dm_var_vs_mai": 2.65,
-        "dm_var_vs_ano": null,
-        "revpar": 182.45,
-        "revpar_var_vs_mai": -30.89,
-        "revpar_var_vs_ano": null
-      }
-    ],
-    "acumulado_2026": {
-      "to": 47.94,
-      "dm": 668.07,
-      "revpar": 319.54
-    },
-    "infraestrutura": {
-      "propriedades": 562,
-      "uhs": 16060,
-      "hoteis": 191,
-      "pousadas": 367,
-      "resorts": 4,
-      "municipios": 9,
-      "habitantes": 1848654
-    },
-    "amostragem": "124 propriedades (1,64% do total), 413 municípios (64,03%), 176.432 UHs (59,15%)",
-    "respondentes": "2 municípios responderam — 201 propriedades / 6.285 UHs",
-    "projecao_verao_2526": {
-      "sp_total_turistas": "16.7M",
-      "litoral_sp_turistas": "7.5M",
-      "sp_total_receita": "R$ 41 bilhões",
-      "fonte": "CIET/SETUR-SP",
-      "data_ref": "Dez/2025"
-    },
-    "eventos_pico": [
-      {
-        "evento": "Verão (Dez-Mar)",
-        "intensidade": "Alta",
-        "nota": "Pico de procura — 7,5M turistas no litoral SP"
-      },
-      {
-        "evento": "Carnaval",
-        "intensidade": "Alta",
-        "nota": "Pico sazonal tradicional"
-      },
-      {
-        "evento": "Jun/26",
-        "intensidade": "Baixa",
-        "nota": "Inverno impacta litorais — TO cai 32,7% vs Mai/26 (ABIH-SP Jun/26)"
-      }
-    ]
-  },
-  "bloco3_impacto_economico": {
-    "titulo": "Retorno Econômico do Turismo",
-    "descricao": "Empregos formais, empresas de turismo e prestadores cadastrados",
-    "empregos_turismo_sp": {
-      "total": 981327,
-      "variacao_acumulada": 5.1,
-      "fonte": "Novo CAGED/CIET",
-      "data_ref": "Nov/2025"
-    },
-    "empresas_turismo_sp": {
-      "total": 346804,
-      "variacao_12m": 2.9,
-      "fonte": "JUCESP/CIET",
-      "data_ref": "Nov/2025"
-    },
-    "caged_peruibe": {
-      "estoque": 9615,
-      "admitidos": 1992,
-      "desligados": 2245,
-      "saldo": -253,
-      "fonte": "Novo CAGED — Painel PowerBI",
-      "data_ref": "2026 (acumulado jan-mai)"
-    },
-    "empresas_ativas_total": 11339,
-    "empresas_detalhe": {
-      "matriz_ativa": 11002,
-      "filial_ativa": 337,
-      "matriz_baixada": 14786,
-      "filial_baixada": 473,
-      "total_matriz": 31065,
-      "total_filial": 889,
-      "fonte": "Redesim/Receita Federal — https://estatistica.redesim.gov.br/situacao-cnpj",
-      "data_ref": "30/06/2026"
-    },
-    "empresas_fonte": "Redesim/Receita Federal",
-    "empresas_data_coleta": "30/06/2026",
-    "cadastur_atividades": [
-      {
-        "atividade": "Guia de Turismo",
-        "quantidade": 68
-      },
-      {
-        "atividade": "Meio de Hospedagem",
-        "quantidade": 27
-      },
-      {
-        "atividade": "Agência de Turismo",
-        "quantidade": 19
-      },
-      {
-        "atividade": "Transportadora Turística",
-        "quantidade": 9
-      },
-      {
-        "atividade": "Prestador Especializado em Segmentos Turísticos",
-        "quantidade": 5
-      },
-      {
-        "atividade": "Organizadora de Eventos",
-        "quantidade": 3
-      },
-      {
-        "atividade": "Restaurante, Cafeteria, Bar e Similares",
-        "quantidade": 3
-      },
-      {
-        "atividade": "Empreendimento de Apoio ao Turismo Náutico ou à Pesca Desportiva",
-        "quantidade": 2
-      },
-      {
-        "atividade": "Guia de Turismo Guia-Motorista",
-        "quantidade": 1
-      },
-      {
-        "atividade": "Prestador de Infraestrutura de Apoio para Eventos",
-        "quantidade": 1
-      }
-    ],
-    "cadastur_total": 138,
-    "cadastur_unicos": 132,
-    "iss_turistico": null,
-    "iss_turistico_nota": "Próxima rodada — Portal Transparência SP (restrição eleições 2026)"
-  },
-  "bloco4_comparativo_regional": {
-    "titulo": "Peruíbe vs Baixada Santista — Indicadores Socioeconômicos",
-    "descricao": "Comparação entre municípios com dados automatizados via IBGE + Redesim + Google Trends",
-    "escopo_nota": "Todas as fontes são automatizáveis: IBGE API (PIB, População), Redesim (CNPJ), Google Trends (termo sem acento, 5 anos jul/2021–jul/2026, Worldwide). Termos: peruibe, itanhaem, mongagua, praia grande, santos, sao vicente, guaruja. Topic ID (município/cidade) testado e descartado para São Vicente — entity reconciliation instável (CV=40.5%).",
-    "cidades": [
-      {
-        "cidade": "Peruíbe",
-        "populacao_2022": 68352,
-        "pib_2021_bi": 1.97,
-        "pib_per_capita": 28766,
-        "google_trends_10y": 56.4,
-        "google_trends_ultimo": 40,
-        "estabelecimentos_ativos": 11339,
-        "google_trends_nivel": "Baixa"
-      },
-      {
-        "cidade": "Itanhaém",
-        "populacao_2022": 112476,
-        "pib_2021_bi": 2.37,
-        "pib_per_capita": 21065,
-        "google_trends_10y": 67.4,
-        "google_trends_ultimo": 53,
-        "estabelecimentos_ativos": 15526,
-        "google_trends_nivel": "Normal"
-      },
-      {
-        "cidade": "Mongaguá",
-        "populacao_2022": 61951,
-        "pib_2021_bi": 1.25,
-        "pib_per_capita": 20252,
-        "google_trends_10y": 59.0,
-        "google_trends_ultimo": 44,
-        "estabelecimentos_ativos": 9857,
-        "google_trends_nivel": "Baixa"
-      },
-      {
-        "cidade": "Praia Grande",
-        "populacao_2022": 349935,
-        "pib_2021_bi": 8.73,
-        "pib_per_capita": 24939,
-        "google_trends_10y": 55.6,
-        "google_trends_ultimo": 44,
-        "estabelecimentos_ativos": 62034,
-        "google_trends_nivel": "Baixa"
-      },
-      {
-        "cidade": "Santos",
-        "populacao_2022": 418608,
-        "pib_2021_bi": 24.09,
-        "pib_per_capita": 57548,
-        "google_trends_10y": 70.0,
-        "google_trends_ultimo": 60,
-        "estabelecimentos_ativos": 87246,
-        "google_trends_nivel": "Normal"
-      },
-      {
-        "cidade": "São Vicente",
-        "populacao_2022": 329911,
-        "pib_2021_bi": 6.12,
-        "pib_per_capita": 18554,
-        "google_trends_10y": 65.9,
-        "google_trends_ultimo": 53,
-        "estabelecimentos_ativos": 49515,
-        "google_trends_nivel": "Normal"
-      },
-      {
-        "cidade": "Guarujá",
-        "populacao_2022": 287634,
-        "pib_2021_bi": 10.49,
-        "pib_per_capita": 36487,
-        "google_trends_10y": 55.6,
-        "google_trends_ultimo": 35,
-        "estabelecimentos_ativos": 45816,
-        "google_trends_nivel": "Baixa"
-      }
-    ],
-    "ranking_nota": "PIB de 2021 (último disponível no IBGE). População do Censo 2022."
-  },
-  "fontes_utilizadas": [
-    {
-      "id": "F8",
-      "nome": "Booking.com",
-      "data_coleta": "2026-07-24",
-      "dados": "434 hospedagens (Peruíbe)"
-    },
-    {
-      "id": "F2",
-      "nome": "ABIH-SP 72ª edição",
-      "data_coleta": "Junho/26",
-      "dados": "TO 26,54% / DM R$ 687,45 / RevPar R$ 182,45 — Litoral Paulista"
-    },
-    {
-      "id": "F9",
-      "nome": "Google Trends (termo 'peruibe' sem acento)",
-      "data_coleta": "2026-07-25",
-      "dados": "61 datapoints 'peruibe' (sem acento) jul/2021 a jul/2026 (5 anos, timeframe exato)"
-    },
-    {
-      "id": "F3",
-      "nome": "CADASTUR",
-      "data_coleta": "07/2026",
-      "dados": "138 cadastamentos / 132 prestadores únicos — 10 categorias"
-    },
-    {
-      "id": "F13",
-      "nome": "Novo CAGED (PowerBI)",
-      "data_coleta": "2026-07-24",
-      "dados": "Estoque 9.615 / Adm 1.992 / Desl 2.245 / Saldo -253"
-    },
-    {
-      "id": "F1",
-      "nome": "CIET/SETUR-SP",
-      "data_coleta": "2026-07-24",
-      "dados": "Projeção verão 25/26, emprego/empresas SP"
-    },
-    {
-      "id": "F4",
-      "nome": "PDTur 2022",
-      "data_coleta": "2026-07-24",
-      "dados": "Perfil do município, inventário turístico"
-    },
-    {
-      "id": "Airbnb",
-      "nome": "Airbnb.com.br",
-      "data_coleta": "2026-07-24",
-      "dados": "Mais de mil anúncios em Peruíbe"
-    },
-    {
-      "id": "F11",
-      "nome": "Redesim/Receita Federal",
-      "data_coleta": "2026-07-24",
-      "dados": "Estabelecimentos ativos de 7 cidades: Peruíbe 11.339, Itanhaém 15.526, Mongaguá 9.857, Praia Grande 62.034, Santos 87.246, São Vicente 49.515, Guarujá 45.816 (ref 30/06/2026)"
-    },
-    {
-      "id": "IBGE",
-      "nome": "IBGE — Censo 2022 + PIB 2021",
-      "data_coleta": "2026-07-24",
-      "dados": "Pop. 68.352 (Censo 2022) + PIB R$ 1,97 bi + comparativo 5 cidades"
-    },
-    {
-      "id": "F7",
-      "nome": "Portal Transparência SP",
-      "data_coleta": "Pendente",
-      "dados": "ISS turístico — próxima rodada (restrição eleições)"
-    }
-  ]
-}
-  </script>
+{
+
+  "meta": {
+
+    "titulo": "Dashboard de Inteligência Turística — Peruíbe",
+
+    "subtitle": "Dados consolidados de procura, sazonalidade, impacto econômico e comparativo regional",
+
+    "ultima_atualizacao": "2026-11-05 (12 fontes coletadas)",
+
+    "periodo_coberto": "2021-2026 (Trends), 2016-2026 (demais)",
+
+    "fontes_count": 12
+
+  },
+
+  "perfil_municipio": {
+
+    "area_km2": 326,
+
+    "populacao_2022": 68352,
+
+    "populacao_2010": 72793,
+
+    "pib_2021_bi": 1.97,
+
+    "pib_per_capita_2021": 28766,
+
+    "estancia_balnearia": true,
+
+    "estancia_posicao": "1 de 15 no SP",
+
+    "mata_atlantica_pct": 68,
+
+    "titulos": [
+
+      "UNESCO",
+
+      "Ramsar"
+
+    ],
+
+    "microrregiao": "Itanhaém",
+
+    "mesorregiao": "Litoral Sul Paulista",
+
+    "ibge_codigo": 3537602,
+
+    "fonte": "IBGE Censo 2022 + PIB 2021 + PDTur 2022"
+
+  },
+
+  "bloco1_procura": {
+
+    "titulo": "Evolução da Procura Turística",
+
+    "descricao": "Volume de hospedagens, anúncios Airbnb, interesse de busca Google e prestadores cadastrados",
+
+    "hospedagens_total": 433,
+
+    "hospedagens_fonte": "Booking.com",
+
+    "hospedagens_data_coleta": "2026-07-25",
+
+    "airbnb_anuncios": "~270",
+
+    "airbnb_descricao": "Aproximadamente 270 listings ativos (15 paginas x ~18 por pagina). Numero consistente com ou sem datas.",
+
+    "airbnb_nota": "Numero real coletado via JSON scraping (25/07/2026). Testado com 4 cenarios: sem datas, feriado 15-17 Nov 2026, verao 10-17 Jan 2027, e 4 adultos — sempre 15 paginas. Airbnb exibe 'mais de mil' no UI mas isso inclue listings de cidades vizinhas da Baixada Santista na busca regional. O numero real para Peruibe (cidade especifica) e ~270. Varia por data: listings ja reservados sao substituidos por outros, mas o total se mantem estavel.",
+
+    "airbnb_fonte": "Airbnb.com.br - JSON scraping (25/07/2026)",
+
+    "google_trends_nota": "Coletado do Google Trends — 61 datapoints mensais (nov/2021 a nov/2026) — termo 'peruibe' (sem acento) — Worldwide. Escolha do termo sem acento: capta buscas com ou sem acento (Google normaliza) e evita viés de adoção de autocorreção de teclados (razão peruibe/peruíbe caiu de 11x em 2016 para 1.5x em 2026). Topic ID /g/11bxfy9vvd foi avaliado e descartado (entity reconciliation instável pré-2019). Serie atualizada com coleta de 05/11/2026 (time_series_BR_20211105 + searched_with_top-searches_queries_BR).",
+
+    "google_trends_serie": [
+
+      {
+
+        "mes": "2021-11",
+
+        "valor": 54
+
+      },
+
+      {
+
+        "mes": "2021-12",
+
+        "valor": 73
+
+      },
+
+      {
+
+        "mes": "2022-01",
+
+        "valor": 70
+
+      },
+
+      {
+
+        "mes": "2022-02",
+
+        "valor": 51
+
+      },
+
+      {
+
+        "mes": "2022-03",
+
+        "valor": 46
+
+      },
+
+      {
+
+        "mes": "2022-04",
+
+        "valor": 41
+
+      },
+
+      {
+
+        "mes": "2022-05",
+
+        "valor": 32
+
+      },
+
+      {
+
+        "mes": "2022-06",
+
+        "valor": 33
+
+      },
+
+      {
+
+        "mes": "2022-07",
+
+        "valor": 43
+
+      },
+
+      {
+
+        "mes": "2022-08",
+
+        "valor": 36
+
+      },
+
+      {
+
+        "mes": "2022-09",
+
+        "valor": 40
+
+      },
+
+      {
+
+        "mes": "2022-10",
+
+        "valor": 43
+
+      },
+
+      {
+
+        "mes": "2022-11",
+
+        "valor": 54
+
+      },
+
+      {
+
+        "mes": "2022-12",
+
+        "valor": 73
+
+      },
+
+      {
+
+        "mes": "2023-01",
+
+        "valor": 84
+
+      },
+
+      {
+
+        "mes": "2023-02",
+
+        "valor": 60
+
+      },
+
+      {
+
+        "mes": "2023-03",
+
+        "valor": 47
+
+      },
+
+      {
+
+        "mes": "2023-04",
+
+        "valor": 49
+
+      },
+
+      {
+
+        "mes": "2023-05",
+
+        "valor": 37
+
+      },
+
+      {
+
+        "mes": "2023-06",
+
+        "valor": 41
+
+      },
+
+      {
+
+        "mes": "2023-07",
+
+        "valor": 45
+
+      },
+
+      {
+
+        "mes": "2023-08",
+
+        "valor": 40
+
+      },
+
+      {
+
+        "mes": "2023-09",
+
+        "valor": 56
+
+      },
+
+      {
+
+        "mes": "2023-10",
+
+        "valor": 55
+
+      },
+
+      {
+
+        "mes": "2023-11",
+
+        "valor": 59
+
+      },
+
+      {
+
+        "mes": "2023-12",
+
+        "valor": 84
+
+      },
+
+      {
+
+        "mes": "2024-01",
+
+        "valor": 89
+
+      },
+
+      {
+
+        "mes": "2024-02",
+
+        "valor": 55
+
+      },
+
+      {
+
+        "mes": "2024-03",
+
+        "valor": 46
+
+      },
+
+      {
+
+        "mes": "2024-04",
+
+        "valor": 39
+
+      },
+
+      {
+
+        "mes": "2024-05",
+
+        "valor": 36
+
+      },
+
+      {
+
+        "mes": "2024-06",
+
+        "valor": 37
+
+      },
+
+      {
+
+        "mes": "2024-07",
+
+        "valor": 40
+
+      },
+
+      {
+
+        "mes": "2024-08",
+
+        "valor": 40
+
+      },
+
+      {
+
+        "mes": "2024-09",
+
+        "valor": 44
+
+      },
+
+      {
+
+        "mes": "2024-10",
+
+        "valor": 47
+
+      },
+
+      {
+
+        "mes": "2024-11",
+
+        "valor": 49
+
+      },
+
+      {
+
+        "mes": "2024-12",
+
+        "valor": 72
+
+      },
+
+      {
+
+        "mes": "2025-01",
+
+        "valor": 82
+
+      },
+
+      {
+
+        "mes": "2025-02",
+
+        "valor": 46
+
+      },
+
+      {
+
+        "mes": "2025-03",
+
+        "valor": 41
+
+      },
+
+      {
+
+        "mes": "2025-04",
+
+        "valor": 38
+
+      },
+
+      {
+
+        "mes": "2025-05",
+
+        "valor": 31
+
+      },
+
+      {
+
+        "mes": "2025-06",
+
+        "valor": 29
+
+      },
+
+      {
+
+        "mes": "2025-07",
+
+        "valor": 34
+
+      },
+
+      {
+
+        "mes": "2025-08",
+
+        "valor": 31
+
+      },
+
+      {
+
+        "mes": "2025-09",
+
+        "valor": 39
+
+      },
+
+      {
+
+        "mes": "2025-10",
+
+        "valor": 43
+
+      },
+
+      {
+
+        "mes": "2025-11",
+
+        "valor": 42
+
+      },
+
+      {
+
+        "mes": "2025-12",
+
+        "valor": 64
+
+      },
+
+      {
+
+        "mes": "2026-01",
+
+        "valor": 67
+
+      },
+
+      {
+
+        "mes": "2026-02",
+
+        "valor": 50
+
+      },
+
+      {
+
+        "mes": "2026-03",
+
+        "valor": 35
+
+      },
+
+      {
+
+        "mes": "2026-04",
+
+        "valor": 37
+
+      },
+
+      {
+
+        "mes": "2026-05",
+
+        "valor": 30
+
+      },
+
+      {
+
+        "mes": "2026-06",
+
+        "valor": 26
+
+      },
+
+      {
+
+        "mes": "2026-07",
+
+        "valor": 31
+
+      },
+
+      {
+
+        "mes": "2026-08",
+
+        "valor": 33
+
+      },
+
+      {
+
+        "mes": "2026-09",
+
+        "valor": 34
+
+      },
+
+      {
+
+        "mes": "2026-10",
+
+        "valor": 36
+
+      },
+
+      {
+
+        "mes": "2026-11",
+
+        "valor": 40
+
+      }
+
+    ],
+
+    "google_trends_media": 47.2,
+
+    "google_trends_pico": {
+
+      "mes": "2024-01",
+
+      "valor": 89
+
+    },
+
+    "google_trends_ultimo": {
+
+      "mes": "2026-11",
+
+      "valor": 40
+
+    },
+
+    "cadastur_total_cadastamentos": 138,
+
+    "cadastur_prestadores_unicos": 132,
+
+    "cadastur_atividades": [
+
+      {
+
+        "atividade": "Guia de Turismo",
+
+        "quantidade": 68
+
+      },
+
+      {
+
+        "atividade": "Meio de Hospedagem",
+
+        "quantidade": 27
+
+      },
+
+      {
+
+        "atividade": "Agência de Turismo",
+
+        "quantidade": 19
+
+      },
+
+      {
+
+        "atividade": "Transportadora Turística",
+
+        "quantidade": 9
+
+      },
+
+      {
+
+        "atividade": "Prestador Especializado em Segmentos Turísticos",
+
+        "quantidade": 5
+
       },
 
       {
@@ -928,6 +874,7 @@
         "query": "tempo peruibe",
 
         "interest": 100,
+
 
         "increase": "5%"
 
@@ -1321,7 +1268,7 @@
 
     "descricao": "Comparação entre municípios com dados automatizados via IBGE + Redesim + Google Trends",
 
-    "escopo_nota": "Todas as fontes são automatizáveis: IBGE API (PIB, População), Redesim (CNPJ), Google Trends (termo sem acento, 5 anos jul/2021–jul/2026, Worldwide). Termos: peruibe, itanhaem, mongagua, praia grande, santos, sao vicente, guaruja. Topic ID (município/cidade) testado e descartado para São Vicente — entity reconciliation instável (CV=40.5%).",
+    "escopo_nota": "Todas as fontes são automatizáveis: IBGE API (PIB, População), Redesim (CNPJ), Google Trends (termo sem acento, 5 anos nov/2021–nov/2026, Worldwide). Termos: peruibe, itanhaem, mongagua, praia grande, santos, sao vicente, guaruja. Topic ID (município/cidade) testado e descartado para São Vicente — entity reconciliation instável (CV=40.5%).",
 
     "cidades": [
 
@@ -1505,7 +1452,7 @@
 
       "data_coleta": "2026-07-25",
 
-      "dados": "61 datapoints 'peruibe' (sem acento) jul/2021 a jul/2026 (5 anos, timeframe exato)"
+      "dados": "61 datapoints 'peruibe' (sem acento) nov/2021 a nov/2026 (5 anos, timeframe exato)"
 
     },
 
@@ -1846,7 +1793,7 @@
               { label: 'Anúncios (Airbnb)', value: b.airbnb_anuncios || nd(), sub: b.airbnb_descricao || 'Coleta pendente',
                 tip: 'Número de anúncios ativos no Airbnb para Peruíbe. ' + (b.airbnb_descricao || '') + '. Fonte: ' + (b.airbnb_fonte || 'Airbnb') },
               { label: 'Google Trends', value: gt.toFixed(1).replace('.', ','), sub: 'Pico: ' + pico.valor + ' (' + pico.mes.replace('-', '/') + ') · Média: ' + gt.toFixed(1).replace('.', ',') + ' · Baixa (<50): ' + mesesBaixa + '/' + nPts + ' meses (' + pctBaixa + '%)',
-                tip: 'Volume de buscas no Google por "peruibe" (sem acento) — 5 anos (' + nPts + ' datapoints, jul/2021 a jul/2026). Média do período: ' + gt.toFixed(1) + '. Pico: ' + pico.valor + ' em ' + pico.mes.replace('-', '/') + '. Meses com procura baixa (<50): ' + mesesBaixa + ' de ' + nPts + ' (' + pctBaixa + '%). Último: ' + ultimo.valor + ' em ' + ultimo.mes.replace('-', '/') + '. Gráfico interativo abaixo — passe o mouse para ver cada mês. Cores: 🔴 0-24 · 🟠 25-49 · 🟡 50-74 · 🟢 75-100.' },
+                tip: 'Volume de buscas no Google por "peruibe" (sem acento) — 5 anos (' + nPts + ' datapoints, nov/2021 a nov/2026). Média do período: ' + gt.toFixed(1) + '. Pico: ' + pico.valor + ' em ' + pico.mes.replace('-', '/') + '. Meses com procura baixa (<50): ' + mesesBaixa + ' de ' + nPts + ' (' + pctBaixa + '%). Último: ' + ultimo.valor + ' em ' + ultimo.mes.replace('-', '/') + '. Gráfico interativo abaixo — passe o mouse para ver cada mês. Cores: 🔴 0-24 · 🟠 25-49 · 🟡 50-74 · 🟢 75-100.' },
               { label: 'Prestadores (CADASTUR)', value: fmt(b.cadastur_total_cadastamentos), sub: b.cadastur_prestadores_unicos + ' prestadores únicos — 10 categorias',
                 tip: 'Total de cadastamentos no CADASTUR (Ministério do Turismo) em Peruíbe. ' + b.cadastur_prestadores_unicos + ' prestadores únicos (alguns com mais de uma atividade). 10 categorias de atividade turística. Fonte: CADASTUR 07/2026.' }
             ];
@@ -1854,7 +1801,7 @@
         return '<div class="metric-card" data-tip="' + m.tip + '"><div class="label">' + m.label + '</div><div class="value">' + m.value + '</div><div class="sub">' + m.sub + '</div></div>';
       }).join('');
 
-      el('b1-chart-title').innerHTML = 'Google Trends — "peruibe" sem acento (jul/2021 a jul/2026) | ' + nPts + ' datapoints | <strong>Passe o mouse para ver cada mês</strong> | Linha muda de cor conforme nível de procura';
+      el('b1-chart-title').innerHTML = 'Google Trends — "peruibe" sem acento (nov/2021 a nov/2026) | ' + nPts + ' datapoints | <strong>Passe o mouse para ver cada mês</strong> | Linha muda de cor conforme nível de procura';
             el('b1-chart').innerHTML = renderTrendsChart(b.google_trends_serie);
             el('b1-legend').innerHTML = '<div class="legend-item"><div class="legend-swatch" style="background:var(--green)"></div>Alta (75-100)</div><div class="legend-item"><div class="legend-swatch" style="background:var(--yellow)"></div>Normal (50-74)</div><div class="legend-item"><div class="legend-swatch" style="background:var(--orange)"></div>Baixa (25-49)</div><div class="legend-item"><div class="legend-swatch" style="background:var(--red)"></div>Muito baixa (0-24)</div>';
     }

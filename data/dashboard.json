@@ -535,7 +535,7 @@
   "bloco4_comparativo_regional": {
     "titulo": "Peruíbe vs Baixada Santista — Indicadores Socioeconômicos",
     "descricao": "Comparação entre municípios com dados automatizados via IBGE + Redesim + Google Trends",
-    "escopo_nota": "Todas as fontes são automatizáveis: IBGE API (PIB, População), Redesim (CNPJ), Google Trends (termo sem acento, 5 anos jul/2021–jul/2026, Worldwide). Termos: peruibe, itanhaem, mongagua, praia grande, santos, sao vicente, guaruja. Topic ID (município/cidade) testado e descartado para São Vicente — entity reconciliation instável (CV=40.5%).",
+    "escopo_nota": "Todas as fontes são automatizáveis: IBGE API (PIB, População), Redesim (CNPJ), Google Trends (termo sem acento, 5 anos nov/2021–nov/2026, Worldwide). Termos: peruibe, itanhaem, mongagua, praia grande, santos, sao vicente, guaruja. Topic ID (município/cidade) testado e descartado para São Vicente — entity reconciliation instável (CV=40.5%).",
     "cidades": [
       {
         "cidade": "Peruíbe",
@@ -627,7 +627,7 @@
       "id": "F9",
       "nome": "Google Trends (termo 'peruibe' sem acento)",
       "data_coleta": "2026-07-25",
-      "dados": "61 datapoints 'peruibe' (sem acento) jul/2021 a jul/2026 (5 anos, timeframe exato)"
+      "dados": "61 datapoints 'peruibe' (sem acento) nov/2021 a nov/2026 (5 anos, timeframe exato)"
     },
     {
       "id": "F3",
